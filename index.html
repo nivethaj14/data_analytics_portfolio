@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nivetha Jayaram Raja — Associate Director, Data & AI</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{
+  --bg:#08111e;
+  --bg2:#0d1e30;
+  --bg3:#112440;
+  --teal:#1a9e8e;
+  --teal2:#22c4b0;
+  --tealt:#a8ede7;
+  --gold:#d4a843;
+  --goldlt:#f0cc6e;
+  --white:#eef3f7;
+  --muted:#7a99b0;
+  --border:rgba(26,158,142,0.18);
+  --borderg:rgba(212,168,67,0.15);
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
+
+/* ── NAV ── */
+nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.1rem 4rem;display:flex;justify-content:space-between;align-items:center;background:rgba(8,17,30,0.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
+.nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--teal);letter-spacing:0.03em}
+.nav-sub{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-top:1px}
+.nav-links{display:flex;gap:2rem;list-style:none}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s}
+.nav-links a:hover{color:var(--teal2)}
+
+/* ── HERO ── */
+#hero{min-height:100vh;display:flex;align-items:center;padding:8rem 4rem 4rem;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;align-items:center;max-width:1180px;margin:0 auto;width:100%}
+.hero-eyebrow{font-size:0.74rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--teal2);margin-bottom:1rem;display:flex;align-items:center;gap:0.8rem}
+.hero-eyebrow::before{content:'';display:block;width:28px;height:1px;background:var(--teal2)}
+h1{font-family:'Cormorant Garamond',serif;font-size:3.9rem;line-height:1.08;font-weight:600;margin-bottom:0.6rem}
+h1 em{font-style:italic;color:var(--teal2)}
+.hero-title{font-size:0.92rem;color:var(--muted);margin-bottom:1.8rem;letter-spacing:0.04em;line-height:1.6}
+.hero-desc{font-size:0.97rem;color:var(--white);opacity:0.78;max-width:500px;line-height:1.9;margin-bottom:2.5rem}
+.btn-row{display:flex;gap:1rem;flex-wrap:wrap}
+.btn-primary{padding:0.8rem 1.9rem;background:var(--teal);color:var(--bg);font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;font-weight:500;transition:background 0.2s}
+.btn-primary:hover{background:var(--teal2)}
+.btn-ghost{padding:0.8rem 1.9rem;border:1px solid var(--border);color:var(--muted);font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:all 0.2s}
+.btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
+
+.hero-panel{background:var(--bg2);border:1px solid var(--border);padding:2rem;position:relative}
+.hero-panel::before{content:'';position:absolute;top:-1px;left:2rem;width:3rem;height:2px;background:var(--teal)}
+.avail{font-size:0.78rem;color:var(--muted);display:flex;align-items:center;gap:0.5rem;margin-bottom:1.5rem}
+.dot{width:7px;height:7px;border-radius:50%;background:#26c281;display:inline-block;animation:pulse 2.2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.35}}
+.stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.4rem}
+.stat-item .num{font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--gold);line-height:1}
+.stat-item .sup{font-size:1.3rem;vertical-align:super}
+.stat-item .lbl{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-top:0.2rem}
+.lang-row{margin-top:1.5rem;padding-top:1.2rem;border-top:1px solid var(--border);display:flex;gap:0.6rem;flex-wrap:wrap}
+.lang-badge{font-size:0.72rem;letter-spacing:0.08em;padding:0.25rem 0.7rem;border:1px solid var(--border);color:var(--muted)}
+
+/* ── SECTION COMMONS ── */
+section{padding:5.5rem 4rem}
+.section-inner{max-width:1180px;margin:0 auto}
+.section-label{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.7rem;display:flex;align-items:center;gap:0.7rem}
+.section-label::before{content:'';display:block;width:22px;height:1px;background:var(--teal2)}
+h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:600;line-height:1.2;margin-bottom:0.5rem}
+.section-sub{color:var(--muted);font-size:0.9rem;max-width:540px;margin-bottom:2.8rem;line-height:1.8}
+.divider{width:100%;height:1px;background:var(--border);margin:0 0 2.8rem}
+
+/* ── IMPACT METRICS ── */
+#metrics{background:var(--bg2)}
+.metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border)}
+.metric-card{background:var(--bg2);padding:2.5rem 1.8rem;text-align:center;position:relative;overflow:hidden;transition:background 0.25s}
+.metric-card:hover{background:var(--bg3)}
+.metric-card::before{content:'';position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:0;height:2px;background:var(--teal);transition:width 0.4s}
+.metric-card:hover::before{width:60%}
+.metric-num{font-family:'Cormorant Garamond',serif;font-size:3.4rem;font-weight:600;color:var(--teal2);line-height:1}
+.metric-unit{font-size:1.5rem;vertical-align:super}
+.metric-label{font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-top:0.4rem}
+.metric-desc{font-size:0.8rem;color:var(--muted);margin-top:0.35rem;line-height:1.5}
+
+/* ── SKILLS ── */
+#skills{background:var(--bg)}
+.skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem}
+.skill-group{margin-bottom:2.5rem}
+.skill-group h3{font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--teal2);margin-bottom:1.3rem;padding-bottom:0.7rem;border-bottom:1px solid var(--border)}
+.skill-bar{margin-bottom:1.1rem}
+.skill-row{display:flex;justify-content:space-between;font-size:0.84rem;margin-bottom:0.35rem}
+.skill-pct{color:var(--muted);font-size:0.75rem}
+.bar-track{height:1.5px;background:rgba(26,158,142,0.14)}
+.bar-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--teal2));transform:scaleX(0);transform-origin:left;transition:transform 1.3s cubic-bezier(.22,1,.36,1)}
+.tags-wrap{display:flex;flex-wrap:wrap;gap:0.55rem}
+.tag{padding:0.35rem 0.9rem;border:1px solid var(--border);font-size:0.75rem;letter-spacing:0.06em;color:var(--muted);transition:all 0.2s;cursor:default}
+.tag:hover{border-color:var(--teal);color:var(--teal2)}
+.tag.gold{border-color:var(--borderg);color:var(--gold)}
+.tag.gold:hover{border-color:var(--gold)}
+
+/* ── EXPERIENCE ── */
+#experience{background:var(--bg2)}
+.exp-timeline{position:relative;padding-left:1.8rem}
+.exp-timeline::before{content:'';position:absolute;left:0;top:0.6rem;bottom:0;width:1px;background:var(--border)}
+.exp-item{position:relative;margin-bottom:3.2rem;padding-left:2rem}
+.exp-dot{position:absolute;left:-1.95rem;top:0.55rem;width:8px;height:8px;border:1px solid var(--teal);background:var(--bg2);transform:rotate(45deg)}
+.exp-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.2rem}
+.exp-role{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:600}
+.exp-badge{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal2);padding:0.28rem 0.75rem;border:1px solid var(--border);white-space:nowrap}
+.exp-company{font-size:0.82rem;color:var(--gold);margin-bottom:0.3rem}
+.exp-loc{font-size:0.76rem;color:var(--muted);margin-bottom:1rem}
+.exp-points{list-style:none}
+.exp-points li{font-size:0.88rem;color:var(--white);opacity:0.75;padding:0.3rem 0 0.3rem 1.2rem;position:relative;line-height:1.7}
+.exp-points li::before{content:'›';position:absolute;left:0;color:var(--teal2);font-size:0.85rem;top:0.3rem}
+.exp-highlight{display:inline;background:rgba(26,158,142,0.1);color:var(--teal2);padding:0.05rem 0.3rem;font-size:0.82rem}
+
+/* ── ACHIEVEMENTS ── */
+#achievements{background:var(--bg)}
+.ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.ach-card{background:var(--bg2);border:1px solid var(--border);padding:1.8rem;position:relative;transition:border-color 0.25s}
+.ach-card:hover{border-color:var(--teal)}
+.ach-card::after{content:'';position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)}
+.ach-icon{font-size:1.3rem;margin-bottom:1rem;color:var(--teal)}
+.ach-val{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:var(--gold);line-height:1;margin-bottom:0.3rem}
+.ach-title{font-size:0.82rem;font-weight:500;margin-bottom:0.5rem;color:var(--white)}
+.ach-desc{font-size:0.8rem;color:var(--muted);line-height:1.65}
+
+/* ── DOMAIN EXPERTISE TIMELINE ── */
+#domain{background:var(--bg2)}
+.domain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
+.domain-card{background:var(--bg3);border:1px solid var(--border);padding:1.8rem;transition:border-color 0.25s}
+.domain-card:hover{border-color:rgba(212,168,67,0.35)}
+.domain-icon{width:38px;height:38px;border:1px solid var(--borderg);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:0.9rem;color:var(--gold)}
+.domain-label{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem}
+.domain-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;margin-bottom:0.6rem;line-height:1.3}
+.domain-desc{font-size:0.81rem;color:var(--muted);line-height:1.65}
+
+/* ── CERTIFICATIONS ── */
+#certifications{background:var(--bg)}
+.cert-awards-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
+.cert-list{display:flex;flex-direction:column;gap:1rem}
+.cert-item{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem 1.4rem;border:1px solid var(--border);transition:border-color 0.2s}
+.cert-item:hover{border-color:var(--teal)}
+.cert-icon{width:34px;height:34px;background:rgba(26,158,142,0.08);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--teal2);font-size:0.85rem;font-weight:500}
+.cert-name{font-size:0.86rem;font-weight:400;line-height:1.4}
+.cert-body{font-size:0.72rem;color:var(--muted);letter-spacing:0.05em;margin-top:0.2rem}
+.award-item{display:flex;align-items:flex-start;gap:1rem;padding:1.2rem 1.4rem;border:1px solid var(--borderg);transition:border-color 0.2s;margin-bottom:1rem}
+.award-item:hover{border-color:var(--gold)}
+.award-icon{width:34px;height:34px;background:rgba(212,168,67,0.08);border:1px solid var(--borderg);display:flex;align-items:center;justify-content:center;flex-shrink:0;color:var(--gold);font-size:0.9rem}
+.award-name{font-size:0.86rem;font-weight:400;line-height:1.4}
+.award-body{font-size:0.72rem;color:var(--muted);margin-top:0.2rem}
+.edu-card{margin-top:2rem;padding:1.5rem;background:var(--bg2);border:1px solid var(--border);position:relative}
+.edu-card::before{content:'';position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--gold)}
+
+/* ── CONTACT ── */
+#contact{background:var(--bg2);text-align:center}
+#contact .section-inner{max-width:620px}
+#contact h2{font-size:3rem;margin-bottom:1rem}
+#contact p{color:var(--muted);margin-bottom:2.5rem;font-size:0.95rem}
+.contact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}
+.contact-card{padding:1.4rem 1rem;border:1px solid var(--border);transition:all 0.2s;text-decoration:none;display:block}
+.contact-card:hover{border-color:var(--teal);background:rgba(26,158,142,0.04)}
+.contact-card-icon{font-size:1.2rem;color:var(--teal2);margin-bottom:0.5rem}
+.contact-card-label{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.3rem}
+.contact-card-value{font-size:0.82rem;color:var(--white);word-break:break-all}
+
+/* ── FOOTER ── */
+footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:0.76rem;color:var(--muted)}
+
+/* ── FADE ANIMATIONS ── */
+.fade-up{opacity:0;transform:translateY(22px);transition:opacity 0.7s ease,transform 0.7s ease}
+.fade-up.visible{opacity:1;transform:translateY(0)}
+.fade-delay-1{transition-delay:0.1s}
+.fade-delay-2{transition-delay:0.2s}
+.fade-delay-3{transition-delay:0.3s}
+
+/* ── DECORATIVE BG ── */
+.hero-glow{position:absolute;top:10%;right:5%;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(26,158,142,0.06) 0%,transparent 70%);pointer-events:none}
+.hero-glow2{position:absolute;bottom:5%;left:10%;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,0.04) 0%,transparent 70%);pointer-events:none}
+
+@media(max-width:900px){
+  nav{padding:1rem 1.5rem}
+  .nav-links{gap:1rem}
+  section{padding:3.5rem 1.5rem}
+  #hero{padding:6rem 1.5rem 3rem}
+  .hero-grid,.skills-layout,.ach-grid,.domain-grid,.cert-awards-grid,.contact-grid{grid-template-columns:1fr}
+  .metrics-grid{grid-template-columns:repeat(2,1fr)}
+  h1{font-size:2.6rem}
+  h2{font-size:2rem}
+  footer{flex-direction:column;gap:0.5rem;text-align:center;padding:1.5rem}
+}
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div>
+    <div class="nav-logo">Nivetha Jayaram Raja</div>
+    <div class="nav-sub">Associate Director · Data &amp; AI</div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#metrics">Impact</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#domain">Expertise</a></li>
+    <li><a href="#certifications">Credentials</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-glow2"></div>
+  <div class="hero-grid">
+    <div>
+      <div class="hero-eyebrow">Associate Director · Data Analytics &amp; AI</div>
+      <h1>Nivetha <em>Jayaram</em> Raja</h1>
+      <div class="hero-title">Data Reporting &amp; Visualization · Snowflake &amp; AI Platforms · Clinical Analytics · Team Leadership</div>
+      <p class="hero-desc">12+ years building AI-driven data solutions that transform complex clinical, commercial, and operational data into actionable intelligence — leading 24-member cross-functional teams to deliver measurable business impact.</p>
+      <div class="btn-row">
+        <a href="#experience" class="btn-primary">View Experience</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="fade-up">
+      <div class="hero-panel">
+        <div class="avail"><span class="dot"></span> Seeking Remote Leadership Opportunities</div>
+        <div class="stat-grid">
+          <div class="stat-item">
+            <div class="num"><span class="counter" data-target="12">0</span><span class="sup">+</span></div>
+            <div class="lbl">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="num"><span class="counter" data-target="24">0</span><span class="sup">+</span></div>
+            <div class="lbl">Team Members Led</div>
+          </div>
+          <div class="stat-item">
+            <div class="num"><span class="counter" data-target="40">0</span><span class="sup">%</span></div>
+            <div class="lbl">Dashboard Performance Gain</div>
+          </div>
+          <div class="stat-item">
+            <div class="num"><span class="counter" data-target="3">0</span></div>
+            <div class="lbl">Certifications</div>
+          </div>
+        </div>
+        <div class="lang-row">
+          <span class="lang-badge">English</span>
+          <span class="lang-badge">Tamil</span>
+          <span class="lang-badge">Telugu</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMPACT METRICS -->
+<section id="metrics">
+  <div class="section-inner">
+    <div class="section-label">Quantified Impact</div>
+    <h2>Key Outcomes Delivered</h2>
+    <p class="section-sub">Measurable results across analytics leadership, platform engineering, and team development.</p>
+    <div class="metrics-grid fade-up">
+      <div class="metric-card">
+        <div class="metric-num"><span class="counter" data-target="40">0</span><span class="metric-unit">%</span></div>
+        <div class="metric-label">Performance Improvement</div>
+        <div class="metric-desc">Redesigned &amp; optimized dashboards — faster load, better UX, higher executive adoption</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-num"><span class="counter" data-target="24">0</span><span class="metric-unit">+</span></div>
+        <div class="metric-label">Engineers &amp; Analysts Led</div>
+        <div class="metric-desc">Cross-functional team delivering AI-powered analytics for clinical &amp; commercial operations</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-num"><span class="counter" data-target="12">0</span><span class="metric-unit">+</span></div>
+        <div class="metric-label">Years of Expertise</div>
+        <div class="metric-desc">Data analytics, reporting, visualization and AI — from healthcare payer to clinical trials</div>
+      </div>
+      <div class="metric-card">
+        <div class="metric-num"><span class="counter" data-target="3">0</span><span class="metric-unit">+</span></div>
+        <div class="metric-label">Industries Served</div>
+        <div class="metric-desc">Healthcare, Pharma, Clinical Trials, and Commercial Analytics — deep domain knowledge</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-inner">
+    <div class="section-label">Technical Expertise</div>
+    <h2>Skills &amp; Tools</h2>
+    <p class="section-sub">A broad, production-grade toolkit spanning AI platforms, cloud data infrastructure, visualization, and engineering leadership.</p>
+    <div class="divider"></div>
+    <div class="skills-layout">
+      <div>
+        <div class="skill-group">
+          <h3>Data &amp; AI Platforms</h3>
+          <div class="skill-bar">
+            <div class="skill-row"><span>Snowflake &amp; Snowflake Cortex AI</span><span class="skill-pct">95%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.95"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>Power BI</span><span class="skill-pct">92%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.92"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>Tableau</span><span class="skill-pct">88%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.88"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>Databricks</span><span class="skill-pct">80%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.80"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>dbt (Data Build Tool)</span><span class="skill-pct">82%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.82"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>Jasper / Crystal Reports</span><span class="skill-pct">85%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.85"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Programming &amp; Query</h3>
+          <div class="skill-bar">
+            <div class="skill-row"><span>SQL &amp; PL/SQL</span><span class="skill-pct">95%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.95"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>Python</span><span class="skill-pct">82%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.82"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>KSQL / JavaScript / HTML</span><span class="skill-pct">75%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.75"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="skill-group">
+          <h3>Leadership &amp; Methodologies</h3>
+          <div class="skill-bar">
+            <div class="skill-row"><span>Team Leadership (24+ Engineers)</span><span class="skill-pct">98%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.98"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>Stakeholder &amp; Executive Engagement</span><span class="skill-pct">93%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.93"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>Agile Scrum &amp; Sprint Leadership</span><span class="skill-pct">90%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.90"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>Full SDLC Management</span><span class="skill-pct">92%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.92"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-row"><span>JIRA &amp; Confluence</span><span class="skill-pct">88%</span></div>
+            <div class="bar-track"><div class="bar-fill" data-width="0.88"></div></div>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>AI &amp; Analytics Capabilities</h3>
+          <div class="tags-wrap">
+            <span class="tag">AI-Powered Reporting</span>
+            <span class="tag">Natural Language Querying</span>
+            <span class="tag">Anomaly Detection</span>
+            <span class="tag">Predictive Analytics</span>
+            <span class="tag">Automated Summaries</span>
+            <span class="tag">Self-Service Analytics</span>
+            <span class="tag">Data Pipeline Engineering</span>
+            <span class="tag">dbt (Data Build Tool)</span>
+            <span class="tag">Business Intelligence</span>
+          </div>
+          <div style="margin-top:1.2rem">
+          <div class="tags-wrap">
+            <span class="tag gold">Clinical Trials Analytics</span>
+            <span class="tag gold">Healthcare Domain</span>
+            <span class="tag gold">Pharma Commercial</span>
+            <span class="tag gold">HR Analytics</span>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-inner">
+    <div class="section-label">Career History</div>
+    <h2>Work Experience</h2>
+    <p class="section-sub">12+ years of progressive data, analytics, and AI leadership — from healthcare payer solutions to clinical trial intelligence platforms.</p>
+    <div class="divider"></div>
+    <div class="exp-timeline">
+
+      <!-- Role 1 -->
+      <div class="exp-item fade-up">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <div class="exp-role">Associate Director — Data &amp; AI</div>
+          <div class="exp-badge">July 2021 — Present</div>
+        </div>
+        <div class="exp-company">RxDatascience Inc (Syneos Health Company)</div>
+        <div class="exp-loc">Remote, India · Healthcare &amp; Pharma</div>
+        <ul class="exp-points">
+          <li>Lead a team of <span class="exp-highlight">24 engineers &amp; analysts</span> designing and delivering AI-powered data visualization and reporting solutions for clinical trials, commercial analytics, and HR insights</li>
+          <li>Architect and implement analytics platforms on <span class="exp-highlight">Snowflake with Cortex AI</span> — enabling intelligent insights, natural language querying, and self-service reporting for enterprise users</li>
+          <li>Build and operationalize end-to-end data pipelines on Snowflake for AI use cases including automated summaries, anomaly detection, and predictive analytics</li>
+          <li>Partner with cross-functional stakeholders — clinical operations, commercial teams, and executive leadership — to translate complex requirements into scalable dashboards and AI-augmented reports</li>
+          <li>Drive data mapping and architecture discussions between warehouse developers, architects, and interfacing systems to ensure robust data integration and quality</li>
+          <li>Mentor and coach team members on Snowflake, Cortex AI, modern visualization, and Agile delivery best practices</li>
+          <li>Redesign and optimize existing dashboards — achieving <span class="exp-highlight">40% performance improvement</span>, enhanced UX, and increased executive adoption through iterative user research</li>
+          <li>Create executive-level <span class="exp-highlight">Power BI dashboards</span> providing actionable insights on user trends, clinical trial metrics, and operational KPIs influencing strategic decision-making</li>
+          <li>Lead Agile Scrum ceremonies — backlog refinement, sprint planning, and retrospectives — maintaining team velocity and continuous improvement culture</li>
+        </ul>
+      </div>
+
+      <!-- Role 2 -->
+      <div class="exp-item fade-up">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <div class="exp-role">Senior Business Analyst</div>
+          <div class="exp-badge">May 2020 — July 2021</div>
+        </div>
+        <div class="exp-company">Kyyba India Pvt Ltd</div>
+        <div class="exp-loc">Remote, India</div>
+        <ul class="exp-points">
+          <li>Converted HTML reports to <span class="exp-highlight">Jasper Reports</span> using TIBCO Jasper Studio, streamlining reporting processes and improving delivery time</li>
+          <li>Analyzed business requirements and raised clarifications with stakeholders to ensure accurate solution design and implementation</li>
+          <li>Performed data analysis in relational databases to identify and resolve data quality issues, ensuring reporting accuracy</li>
+          <li>Led requirements analysis for RFEs and designed UI/UX mockups using <span class="exp-highlight">Adobe XD</span> for improved user experience</li>
+        </ul>
+      </div>
+
+      <!-- Role 3 -->
+      <div class="exp-item fade-up">
+        <div class="exp-dot"></div>
+        <div class="exp-header">
+          <div class="exp-role">Product Specialist</div>
+          <div class="exp-badge">August 2011 — March 2017</div>
+        </div>
+        <div class="exp-company">Cognizant Technology Solutions</div>
+        <div class="exp-loc">Chennai, India · US Healthcare Payer Clients</div>
+        <ul class="exp-points">
+          <li>Tracked project progress, managed defect resolution, and collected metrics to identify and report deviations in business workflows for healthcare payer clients</li>
+          <li>Led the design, build, and enhancement of multiple healthcare payer practice solutions across <span class="exp-highlight">membership, claims, and benefits modules</span></li>
+          <li>Delivered customized solutions across membership enrollment, claims processing, and benefit plan management — improving operational efficiency for US healthcare payer clients</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DOMAIN EXPERTISE -->
+<section id="domain">
+  <div class="section-inner">
+    <div class="section-label">Areas of Impact</div>
+    <h2>Domain &amp; Platform Expertise</h2>
+    <p class="section-sub">Deep functional knowledge across data platforms, analytics domains, and clinical-commercial business intelligence.</p>
+    <div class="divider"></div>
+    <div class="domain-grid">
+      <div class="domain-card fade-up">
+        <div class="domain-icon">❄</div>
+        <div class="domain-label">Cloud Platform</div>
+        <div class="domain-title">Snowflake &amp; Cortex AI</div>
+        <div class="domain-desc">End-to-end architecture of Snowflake-based analytics platforms integrating Cortex AI for natural language querying, automated summaries, and intelligent self-service reporting.</div>
+      </div>
+      <div class="domain-card fade-up fade-delay-1">
+        <div class="domain-icon">⬡</div>
+        <div class="domain-label">Business Intelligence</div>
+        <div class="domain-title">Executive Dashboards &amp; Power BI</div>
+        <div class="domain-desc">Design and delivery of executive-level Power BI dashboards tracking application usage trends, clinical KPIs, and operational performance — driving C-suite decision-making.</div>
+      </div>
+      <div class="domain-card fade-up fade-delay-2">
+        <div class="domain-icon">⊕</div>
+        <div class="domain-label">Healthcare &amp; Clinical</div>
+        <div class="domain-title">Clinical Trials Analytics</div>
+        <div class="domain-desc">Deep expertise in clinical trial data, pharma commercial analytics, and healthcare payer systems — membership, claims, benefits, and enrollment data across US markets.</div>
+      </div>
+      <div class="domain-card fade-up">
+        <div class="domain-icon">◉</div>
+        <div class="domain-label">Team Leadership</div>
+        <div class="domain-title">Engineering &amp; Analytics Teams</div>
+        <div class="domain-desc">Scaled and mentored 24-member cross-functional teams through best practices in Snowflake development, Cortex AI, data visualization, and Agile delivery methodologies.</div>
+      </div>
+      <div class="domain-card fade-up fade-delay-1">
+        <div class="domain-icon">→</div>
+        <div class="domain-label">Data Engineering</div>
+        <div class="domain-title">Pipeline &amp; Architecture</div>
+        <div class="domain-desc">Built and operationalized production data pipelines preparing, enriching, and exposing data for AI use cases — anomaly detection, predictive analytics, and automated reporting.</div>
+      </div>
+      <div class="domain-card fade-up fade-delay-2">
+        <div class="domain-icon">✦</div>
+        <div class="domain-label">Agile Leadership</div>
+        <div class="domain-title">SDLC &amp; Delivery Excellence</div>
+        <div class="domain-desc">Full SDLC ownership from requirements to production — leading sprint planning, backlog refinement, and retrospectives in Agile Scrum environments using JIRA and Confluence.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS / HIGHLIGHTS -->
+<section id="achievements" style="background:var(--bg2)">
+  <div class="section-inner">
+    <div class="section-label">Highlights</div>
+    <h2>Key Achievements</h2>
+    <p class="section-sub">Standout moments from a 12-year career defined by analytical precision and leadership impact.</p>
+    <div class="ach-grid">
+      <div class="ach-card fade-up">
+        <div class="ach-icon">◎</div>
+        <div class="ach-val">40%</div>
+        <div class="ach-title">Dashboard Performance Uplift</div>
+        <div class="ach-desc">Redesigned and optimized existing analytics dashboards — improving load performance by 40%, enhancing UI/UX, and driving executive adoption through iterative user research cycles.</div>
+      </div>
+      <div class="ach-card fade-up fade-delay-1">
+        <div class="ach-icon">★</div>
+        <div class="ach-val">Best BI</div>
+        <div class="ach-title">Best BI Visualization Idea Award</div>
+        <div class="ach-desc">Recognised with a cash prize for an outstanding data visualization concept — demonstrating creative problem-solving and technical excellence in business intelligence design.</div>
+      </div>
+      <div class="ach-card fade-up fade-delay-2">
+        <div class="ach-icon">◈</div>
+        <div class="ach-val">Q4 '16</div>
+        <div class="ach-title">Associate of the Quarter</div>
+        <div class="ach-desc">Awarded Associate of the Quarter at Cognizant in Q4 2016 in recognition of outstanding contributions to client delivery and cross-functional project leadership.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS & EDUCATION -->
+<section id="certifications">
+  <div class="section-inner">
+    <div class="section-label">Credentials</div>
+    <h2>Certifications &amp; Education</h2>
+    <p class="section-sub">Formally recognised qualifications across data science, database expertise, and healthcare domain knowledge.</p>
+    <div class="divider"></div>
+    <div class="cert-awards-grid">
+      <div>
+        <div class="section-label" style="margin-bottom:1.2rem;font-size:0.68rem">Certifications</div>
+        <div class="cert-list">
+          <div class="cert-item fade-up">
+            <div class="cert-icon">SQL</div>
+            <div>
+              <div class="cert-name">ORACLE Certified SQL Expert (OCA)</div>
+              <div class="cert-body">Oracle · Database Expert Certification</div>
+            </div>
+          </div>
+          <div class="cert-item fade-up">
+            <div class="cert-icon">DS</div>
+            <div>
+              <div class="cert-name">Master Certification in Data Science</div>
+              <div class="cert-body">Simplilearn · Advanced Data Science Program</div>
+            </div>
+          </div>
+          <div class="cert-item fade-up">
+            <div class="cert-icon">HX</div>
+            <div>
+              <div class="cert-name">AHM 250 — Introduction to Healthcare</div>
+              <div class="cert-body">AHIP · Health Insurance &amp; Payer Domain</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card fade-up" style="margin-top:2rem">
+          <div class="section-label" style="margin-bottom:0.8rem;font-size:0.68rem">Education</div>
+          <div style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;margin-bottom:0.3rem">Bachelor of Engineering — Electronics &amp; Communication</div>
+          <div style="font-size:0.82rem;color:var(--gold);margin-bottom:0.3rem">Anna University · 2007 — 2011</div>
+          <div style="font-size:0.8rem;color:var(--muted)">Graduated with 80% · Top 10 percentile of the class</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-label" style="margin-bottom:1.2rem;font-size:0.68rem">Awards &amp; Recognition</div>
+        <div class="award-item fade-up">
+          <div class="award-icon">★</div>
+          <div>
+            <div class="award-name">Best BI Visualization Idea</div>
+            <div class="award-body">Cash prize of ₹10,000 · Outstanding contribution to data visualization innovation</div>
+          </div>
+        </div>
+        <div class="award-item fade-up">
+          <div class="award-icon">◈</div>
+          <div>
+            <div class="award-name">Associate of the Quarter</div>
+            <div class="award-body">Q4 2016 · Cognizant Technology Solutions · Client delivery excellence</div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;padding:1.5rem;border:1px solid var(--border);background:var(--bg2)" class="fade-up">
+          <div class="section-label" style="margin-bottom:0.8rem;font-size:0.68rem">Languages</div>
+          <div style="display:flex;gap:0.8rem;flex-wrap:wrap">
+            <div style="padding:0.6rem 1.2rem;border:1px solid var(--border);text-align:center">
+              <div style="font-size:0.86rem;font-weight:500">English</div>
+              <div style="font-size:0.7rem;color:var(--teal2);margin-top:0.1rem;letter-spacing:0.08em;text-transform:uppercase">Professional</div>
+            </div>
+            <div style="padding:0.6rem 1.2rem;border:1px solid var(--border);text-align:center">
+              <div style="font-size:0.86rem;font-weight:500">Tamil</div>
+              <div style="font-size:0.7rem;color:var(--teal2);margin-top:0.1rem;letter-spacing:0.08em;text-transform:uppercase">Native</div>
+            </div>
+            <div style="padding:0.6rem 1.2rem;border:1px solid var(--border);text-align:center">
+              <div style="font-size:0.86rem;font-weight:500">Telugu</div>
+              <div style="font-size:0.7rem;color:var(--teal2);margin-top:0.1rem;letter-spacing:0.08em;text-transform:uppercase">Proficient</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="section-label" style="justify-content:center;margin-left:0">Let's Connect</div>
+    <h2>Open to Remote Leadership Roles</h2>
+    <p>Seeking senior remote opportunities in Data Analytics, AI, and Reporting leadership — happy to connect and explore the right fit.</p>
+    <div class="contact-grid">
+      <a href="mailto:nivethaj14@gmail.com" class="contact-card">
+        <div class="contact-card-icon">✉</div>
+        <div class="contact-card-label">Email</div>
+        <div class="contact-card-value">nivethaj14@gmail.com</div>
+      </a>
+      <a href="tel:+919962017614" class="contact-card">
+        <div class="contact-card-icon">✆</div>
+        <div class="contact-card-label">Phone</div>
+        <div class="contact-card-value">+91 99620 17614</div>
+      </a>
+      <a href="https://www.linkedin.com/in/nivetha-jayaram-raja-data-analytics/" target="_blank" class="contact-card">
+        <div class="contact-card-icon">in</div>
+        <div class="contact-card-label">LinkedIn</div>
+        <div class="contact-card-value">View Profile</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>© 2025 Nivetha Jayaram Raja · Data &amp; AI Portfolio</div>
+  <div>12+ Years · Healthcare &amp; Pharma Analytics · Open to Remote Roles</div>
+</footer>
+
+<script>
+// Intersection observer — fade + skill bars
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      e.target.querySelectorAll('.bar-fill').forEach(b => {
+        const w = parseFloat(b.dataset.width) || 0;
+        b.style.transform = `scaleX(${w})`;
+      });
+    }
+  });
+}, {threshold: 0.1});
+document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
+
+// Skills section — trigger bars even when parent isn't .fade-up
+const skillObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      document.querySelectorAll('.bar-fill').forEach(b => {
+        const w = parseFloat(b.dataset.width) || 0;
+        b.style.transform = `scaleX(${w})`;
+      });
+    }
+  });
+}, {threshold: 0.05});
+const sk = document.getElementById('skills');
+if (sk) skillObs.observe(sk);
+
+// Animated counters
+function animateCounter(el, target, duration) {
+  const isDecimal = !Number.isInteger(target);
+  const start = performance.now();
+  const run = now => {
+    const progress = Math.min((now - start) / duration, 1);
+    const ease = 1 - Math.pow(1 - progress, 3);
+    const val = target * ease;
+    el.textContent = isDecimal ? val.toFixed(1) : Math.round(val);
+    if (progress < 1) requestAnimationFrame(run);
+    else el.textContent = isDecimal ? target.toFixed(1) : target;
+  };
+  requestAnimationFrame(run);
+}
+
+const cObs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.querySelectorAll('.counter').forEach(c => {
+        animateCounter(c, parseFloat(c.dataset.target), 1600);
+      });
+      cObs.unobserve(e.target);
+    }
+  });
+}, {threshold: 0.25});
+document.querySelectorAll('.metrics-grid, .hero-panel').forEach(el => cObs.observe(el));
+</script>
+</body>
+</html>
