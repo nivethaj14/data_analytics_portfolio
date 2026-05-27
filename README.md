@@ -13,7 +13,7 @@ and delivering AI-powered data solutions across healthcare and pharma domains.
 - **Domain Expertise** — Clinical Trials Analytics, Pharma Commercial, HR Analytics
 
 ## Live Portfolio
-🔗 [View Portfolio]((https://nivethaj14.github.io/data_analytics_portfolio/))
+🔗 [View Portfolio](https://nivethaj14.github.io/data_analytics_portfolio/)
 
 ## Connect
 - 📧 nivethaj14@gmail.com  
