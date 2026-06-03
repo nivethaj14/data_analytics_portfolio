@@ -102,6 +102,7 @@ h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:600;line-
 .exp-timeline::before{content:'';position:absolute;left:0;top:0.6rem;bottom:0;width:1px;background:var(--border)}
 .exp-item{position:relative;margin-bottom:3.2rem;padding-left:2rem}
 .exp-dot{position:absolute;left:-1.95rem;top:0.55rem;width:8px;height:8px;border:1px solid var(--teal);background:var(--bg2);transform:rotate(45deg)}
+.exp-dot.break{border-color:var(--muted);background:var(--bg2)}
 .exp-header{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:0.5rem;margin-bottom:0.2rem}
 .exp-role{font-family:'Cormorant Garamond',serif;font-size:1.45rem;font-weight:600}
 .exp-badge{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal2);padding:0.28rem 0.75rem;border:1px solid var(--border);white-space:nowrap}
@@ -221,10 +222,19 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
       <p class="hero-desc">12+ years building AI-driven data solutions that transform complex clinical, commercial, and operational data into actionable intelligence — leading 24-member cross-functional teams to deliver measurable business impact.</p>
       <div class="btn-row">
         <a href="#experience" class="btn-primary">View Experience</a>
+        <a href="Nivetha_Jayaram_Raja_Resume.pdf" download class="btn-ghost" style="display:flex;align-items:center;gap:0.5rem">⬇ Download Resume</a>
         <a href="#contact" class="btn-ghost">Get in Touch</a>
       </div>
     </div>
     <div class="fade-up">
+      <div style="text-align:center;margin-bottom:1.5rem">
+        <div style="position:relative;display:inline-block">
+          <img src="Media.jpeg" alt="Nivetha Jayaram Raja" style="width:140px;height:140px;border-radius:50%;object-fit:cover;object-position:center top;border:2px solid var(--teal);display:block;margin:0 auto"/>
+          <div style="position:absolute;bottom:6px;right:6px;width:16px;height:16px;border-radius:50%;background:#26c281;border:2px solid var(--bg2)"></div>
+        </div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;margin-top:0.8rem;color:var(--white)">Nivetha Jayaram Raja</div>
+        <div style="font-size:0.72rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--teal2);margin-top:0.2rem">Associate Director · Data &amp; AI</div>
+      </div>
       <div class="hero-panel">
         <div class="avail"><span class="dot"></span> Seeking Remote Leadership Opportunities</div>
         <div class="stat-grid">
@@ -254,8 +264,6 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
     </div>
   </div>
 </section>
-
-<!-- IMPACT METRICS -->
 <section id="metrics">
   <div class="section-inner">
     <div class="section-label">Quantified Impact</div>
@@ -293,104 +301,109 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
     <h2>Skills &amp; Tools</h2>
     <p class="section-sub">A broad, production-grade toolkit spanning AI platforms, cloud data infrastructure, visualization, and engineering leadership.</p>
     <div class="divider"></div>
-    <div class="skills-layout">
-      <div>
-        <div class="skill-group">
-          <h3>Data &amp; AI Platforms</h3>
-          <div class="skill-bar">
-            <div class="skill-row"><span>Snowflake &amp; Snowflake Cortex AI</span><span class="skill-pct">95%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.95"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>Power BI</span><span class="skill-pct">92%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.92"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>Tableau</span><span class="skill-pct">88%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.88"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>Databricks</span><span class="skill-pct">80%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.80"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>dbt (Data Build Tool)</span><span class="skill-pct">82%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.82"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>Jasper / Crystal Reports</span><span class="skill-pct">85%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.85"></div></div>
-          </div>
-        </div>
 
-        <div class="skill-group">
-          <h3>Programming &amp; Query</h3>
-          <div class="skill-bar">
-            <div class="skill-row"><span>SQL &amp; PL/SQL</span><span class="skill-pct">95%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.95"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>Python</span><span class="skill-pct">82%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.82"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>KSQL / JavaScript / HTML</span><span class="skill-pct">75%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.75"></div></div>
-          </div>
+    <div style="display:flex;flex-direction:column;gap:2rem">
+
+      <!-- Expert -->
+      <div class="skill-cat">
+        <div class="skill-cat-header">
+          <span class="skill-level expert">Expert</span>
+          <span class="skill-cat-line"></span>
+        </div>
+        <div class="tags-wrap" style="margin-top:1rem">
+          <span class="stag expert">Snowflake</span>
+          <span class="stag expert">Snowflake Cortex AI</span>
+          <span class="stag expert">SQL &amp; PL/SQL</span>
+          <span class="stag expert">Power BI</span>
+          <span class="stag expert">Data Modelling</span>
+          <span class="stag expert">Team Leadership</span>
+          <span class="stag expert">Stakeholder Management</span>
+          <span class="stag expert">Agile Scrum</span>
+          <span class="stag expert">Clinical Trials Analytics</span>
+          <span class="stag expert">Healthcare &amp; Pharma Domain</span>
         </div>
       </div>
 
-      <div>
-        <div class="skill-group">
-          <h3>Leadership &amp; Methodologies</h3>
-          <div class="skill-bar">
-            <div class="skill-row"><span>Team Leadership (24+ Engineers)</span><span class="skill-pct">98%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.98"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>Stakeholder &amp; Executive Engagement</span><span class="skill-pct">93%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.93"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>Agile Scrum &amp; Sprint Leadership</span><span class="skill-pct">90%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.90"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>Full SDLC Management</span><span class="skill-pct">92%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.92"></div></div>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-row"><span>JIRA &amp; Confluence</span><span class="skill-pct">88%</span></div>
-            <div class="bar-track"><div class="bar-fill" data-width="0.88"></div></div>
-          </div>
+      <!-- Proficient -->
+      <div class="skill-cat">
+        <div class="skill-cat-header">
+          <span class="skill-level proficient">Proficient</span>
+          <span class="skill-cat-line"></span>
         </div>
-
-        <div class="skill-group">
-          <h3>AI &amp; Analytics Capabilities</h3>
-          <div class="tags-wrap">
-            <span class="tag">AI-Powered Reporting</span>
-            <span class="tag">Natural Language Querying</span>
-            <span class="tag">Anomaly Detection</span>
-            <span class="tag">Predictive Analytics</span>
-            <span class="tag">Automated Summaries</span>
-            <span class="tag">Self-Service Analytics</span>
-            <span class="tag">Data Pipeline Engineering</span>
-            <span class="tag">dbt (Data Build Tool)</span>
-            <span class="tag">Business Intelligence</span>
-          </div>
-          <div style="margin-top:1.2rem">
-          <div class="tags-wrap">
-            <span class="tag gold">Clinical Trials Analytics</span>
-            <span class="tag gold">Healthcare Domain</span>
-            <span class="tag gold">Pharma Commercial</span>
-            <span class="tag gold">HR Analytics</span>
-          </div>
-          </div>
+        <div class="tags-wrap" style="margin-top:1rem">
+          <span class="stag proficient">Tableau</span>
+          <span class="stag proficient">Databricks</span>
+          <span class="stag proficient">dbt (Data Build Tool)</span>
+          <span class="stag proficient">Python</span>
+          <span class="stag proficient">Streamlit</span>
+          <span class="stag proficient">Jasper Reports</span>
+          <span class="stag proficient">Crystal Reports</span>
+          <span class="stag proficient">Full SDLC Management</span>
+          <span class="stag proficient">JIRA &amp; Confluence</span>
+          <span class="stag proficient">AI-Powered Reporting</span>
+          <span class="stag proficient">Predictive Analytics</span>
+          <span class="stag proficient">Natural Language Querying</span>
+          <span class="stag proficient">Self-Service Analytics</span>
+          <span class="stag proficient">Star Schema Design</span>
+          <span class="stag proficient">ChatGPT &amp; GitHub Copilot</span>
         </div>
       </div>
+
+      <!-- Familiar -->
+      <div class="skill-cat">
+        <div class="skill-cat-header">
+          <span class="skill-level familiar">Familiar</span>
+          <span class="skill-cat-line"></span>
+        </div>
+        <div class="tags-wrap" style="margin-top:1rem">
+          <span class="stag familiar">KSQL</span>
+          <span class="stag familiar">JavaScript</span>
+          <span class="stag familiar">HTML</span>
+          <span class="stag familiar">Anomaly Detection</span>
+          <span class="stag familiar">Adobe XD</span>
+          <span class="stag familiar">Power Automate</span>
+        </div>
+      </div>
+
+      <!-- Domain -->
+      <div class="skill-cat">
+        <div class="skill-cat-header">
+          <span class="skill-level domain">Domain</span>
+          <span class="skill-cat-line"></span>
+        </div>
+        <div class="tags-wrap" style="margin-top:1rem">
+          <span class="stag domain">Clinical Trials</span>
+          <span class="stag domain">Pharma Commercial Analytics</span>
+          <span class="stag domain">HR Analytics</span>
+          <span class="stag domain">Healthcare Payer Systems</span>
+          <span class="stag domain">Membership &amp; Claims</span>
+          <span class="stag domain">Benefits Management</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
+
+<style>
+.skill-cat-header{display:flex;align-items:center;gap:1rem}
+.skill-level{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;padding:0.3rem 0.9rem;white-space:nowrap;font-weight:500}
+.skill-level.expert{color:var(--teal2);border:1px solid var(--teal);background:rgba(26,158,142,0.08)}
+.skill-level.proficient{color:var(--gold);border:1px solid var(--borderg);background:rgba(212,168,67,0.07)}
+.skill-level.familiar{color:var(--muted);border:1px solid rgba(122,153,176,0.3);background:rgba(122,153,176,0.05)}
+.skill-level.domain{color:var(--goldlt);border:1px solid rgba(240,204,110,0.25);background:rgba(240,204,110,0.05)}
+.skill-cat-line{flex:1;height:1px;background:var(--border)}
+.stag{padding:0.4rem 1rem;font-size:0.8rem;letter-spacing:0.04em;transition:all 0.2s;cursor:default}
+.stag.expert{border:1px solid rgba(26,158,142,0.35);color:var(--teal2);background:rgba(26,158,142,0.05)}
+.stag.expert:hover{background:rgba(26,158,142,0.12);border-color:var(--teal2)}
+.stag.proficient{border:1px solid rgba(212,168,67,0.25);color:var(--goldlt);background:rgba(212,168,67,0.04)}
+.stag.proficient:hover{background:rgba(212,168,67,0.1);border-color:var(--gold)}
+.stag.familiar{border:1px solid rgba(122,153,176,0.2);color:var(--muted);background:transparent}
+.stag.familiar:hover{border-color:rgba(122,153,176,0.5);color:var(--white)}
+.stag.domain{border:1px solid rgba(240,204,110,0.2);color:var(--muted);background:transparent}
+.stag.domain:hover{border-color:var(--goldlt);color:var(--goldlt)}
+</style>
+
 
 <!-- EXPERIENCE -->
 <section id="experience">
@@ -432,6 +445,19 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
       </div>
 
       <!-- Role 3 -->
+      <div class="exp-item fade-up">
+        <div class="exp-dot break"></div>
+        <div class="exp-header">
+          <div class="exp-role" style="font-size:1.2rem;color:var(--muted)">Career Break</div>
+          <div class="exp-badge">March 2017 — May 2020</div>
+        </div>
+        <div class="exp-company" style="color:var(--muted)">Personal — Marriage &amp; Maternity</div>
+        <div class="exp-loc">India</div>
+        <ul class="exp-points">
+          <li style="opacity:0.6">Took a deliberate career break following marriage and the birth of my child — a personal choice to prioritise family during a significant life transition. Remained engaged with the data and analytics space through self-directed learning, returning to the workforce in 2020 with renewed focus and commitment.</li>
+        </ul>
+      </div>
+
       <div class="exp-item fade-up">
         <div class="exp-dot"></div>
         <div class="exp-header">
@@ -738,23 +764,6 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
         <div class="acc-body">Introduced the practice of proactively reaching out to business stakeholders before development begins — scheduling focused clarity meetings to validate understanding, resolve ambiguities, and align on expected outcomes. These sessions replaced assumption-driven development with shared understanding, ensuring the team built exactly what the business needed from the very first iteration.</div>
       </div>
 
-      <div class="acc-item fade-up" onclick="toggleAcc(this)">
-        <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon teal">◈</span>
-            <div>
-              <div class="acc-tag teal">Visibility · Operational Intelligence</div>
-              <div class="acc-title">Adhoc Dashboards — Application &amp; JIRA Metrics</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome teal">↑ Data-driven leadership decisions</span>
-            <span class="acc-chevron">+</span>
-          </div>
-        </div>
-        <div class="acc-body">Built targeted adhoc dashboards surfacing operational intelligence that was previously invisible — including application usage metrics tracking user adoption and feature engagement, and JIRA effectiveness metrics measuring sprint velocity, ticket throughput, and defect rates. These gave leadership real-time visibility into both product health and team performance.</div>
-      </div>
-
       <div class="acc-item fade-up gold" onclick="toggleAcc(this)">
         <div class="acc-header">
           <div class="acc-left">
@@ -804,23 +813,6 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           </div>
         </div>
         <div class="acc-body">Designed and implemented a unified Snowflake star schema data model built to support multi-client and multi-product architecture simultaneously — with centralised fact tables and flexible dimension layers. Onboarding a new client or extending to a new product requires only configuration changes, eliminating repetitive development effort and compressing delivery timelines by 50%.</div>
-      </div>
-
-      <div class="acc-item fade-up gold" onclick="toggleAcc(this)">
-        <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon gold">⊟</span>
-            <div>
-              <div class="acc-tag gold">Data Modelling · Dynamic Filtering</div>
-              <div class="acc-title">Date Dimension Table with Ranked Columns &amp; Config-Driven Filters</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome gold">↑ Fully dynamic filters · zero deployment effort</span>
-            <span class="acc-chevron gold">+</span>
-          </div>
-        </div>
-        <div class="acc-body">Architected a comprehensive date dimension table in Snowflake — covering all date-related columns enriched with rank values for each period (day, week, month, quarter, year) — paired with a configuration table driving all time period category filters dynamically. Adding or modifying a filter requires only a table update, with no code changes and no downtime.</div>
       </div>
 
       <div class="acc-item fade-up gold" onclick="toggleAcc(this)">
@@ -878,146 +870,8 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
 
 
 
-<!-- CERTIFICATIONS & EDUCATION -->
 
-      <div class="proc-card fade-up fade-delay-1" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--teal)">✓</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Standards · Code Quality · Team Growth</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Code &amp; UI Review Checklist</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Created a comprehensive review checklist covering both code standards and UI consistency, ensuring every deliverable meets quality benchmarks before release. Consistent, structured code reviews went beyond quality enforcement — they became a powerful learning tool that helped engineers understand better approaches, think more critically about their solutions, and grow technically sprint after sprint. Over time, the team began self-correcting before reviews, reflecting a genuine shift in engineering mindset and capability.</div>
-        <div style="font-size:0.8rem;color:var(--teal2);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--border)">↑ Team-wide quality standards · accelerated technical growth · stronger engineering thinking</div>
-      </div>
 
-      <div class="proc-card fade-up fade-delay-2" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--teal)">⬡</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Agile · Delivery</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">JIRA Agile Practices Enforcement</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Enforced structured JIRA practices across the team — ticket hygiene, sprint tracking, status updates, and backlog discipline — ensuring full transparency on delivery progress and enabling data-driven sprint planning.</div>
-        <div style="font-size:0.8rem;color:var(--teal2);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--border)">↑ Improved sprint visibility &amp; team accountability</div>
-      </div>
-
-      <div class="proc-card fade-up" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--gold)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--borderg);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--gold)">⊕</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Architecture · Reusability</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Configurable KPI Logic Framework</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Redesigned KPI logic to be fully configurable rather than hardcoded — enabling the same framework to be rapidly adopted for new clients without engineering rework, significantly reducing onboarding effort and time-to-value.</div>
-        <div style="font-size:0.8rem;color:var(--goldlt);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--borderg)">↑ Faster multi-client adoption with zero logic rework</div>
-      </div>
-
-      <div class="proc-card fade-up fade-delay-1" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--gold)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--borderg);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--gold)">⇄</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Architecture · Scalability</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Configurable Time Period &amp; Category Filters</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Architected time period and category filters as table-driven configurations — meaning any new application or client requirement is accommodated through simple table-level changes alone, with no code modifications required.</div>
-        <div style="font-size:0.8rem;color:var(--goldlt);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--borderg)">↑ New requirements handled via table changes only — zero code rework</div>
-      </div>
-
-      <div class="proc-card fade-up fade-delay-2" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--teal)">◷</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Agile · Team Alignment</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Daily Standup Facilitation</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Facilitated daily Agile standup calls across the 24-member engineering team — ensuring alignment on sprint progress, surfacing blockers early, and maintaining delivery momentum across concurrent analytics workstreams. Created a consistent rhythm of communication that kept the team focused, accountable, and unblocked every single day.</div>
-        <div style="font-size:0.8rem;color:var(--teal2);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--border)">↑ Faster blocker resolution · stronger sprint alignment across 24 engineers</div>
-      </div>
-
-      <div class="proc-card fade-up" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--teal)">⊞</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Planning · Clarity Before Build</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Dedicated Data &amp; Requirement Analysis Phase</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Introduced a dedicated upfront phase for data analysis and requirement analysis before any development begins — ensuring the team had complete clarity on data structures, business logic, and expected outputs. Eliminated ambiguity early, significantly reducing mid-sprint rework, scope changes, and back-and-forth between developers and stakeholders.</div>
-        <div style="font-size:0.8rem;color:var(--teal2);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--border)">↑ Reduced development time through full clarity before build</div>
-      </div>
-
-      <div class="proc-card fade-up fade-delay-1" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--teal)">✎</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Quality · BA Alignment</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Unit Test Cases with Expected Output</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Introduced the practice of creating unit test cases with clearly defined expected outputs before development — aligning developers and Business Analysts on exactly what a correct result looks like. Eliminated post-development misalignment, reduced UAT defects, and gave developers a clear acceptance benchmark to build confidently against.</div>
-        <div style="font-size:0.8rem;color:var(--teal2);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--border)">↑ Reduced development time · stronger Dev–BA alignment · fewer UAT defects</div>
-      </div>
-
-      <div class="proc-card fade-up fade-delay-2" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--gold)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--borderg);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--gold)">★</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Architecture · Multi-Client · Multi-Product</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Unified Data Model — Multi-Client &amp; Multi-Product Architecture</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Designed and implemented a unified Snowflake star schema data model built to support multi-client and multi-product architecture simultaneously — with centralised fact tables and flexible dimension layers that accommodate client-specific and product-specific variations through configuration alone. Onboarding a new client or extending to a new product no longer requires rebuilding or duplicating the model — it simply extends the existing structure, eliminating repetitive development effort and dramatically compressing delivery timelines.</div>
-        <div style="display:flex;align-items:center;gap:1rem;margin-top:0.5rem;padding-top:1rem;border-top:1px solid var(--borderg)">
-          <div style="font-family:'Cormorant Garamond',serif;font-size:2.8rem;font-weight:600;color:var(--gold);line-height:1">50%</div>
-          <div style="font-size:0.8rem;color:var(--goldlt);line-height:1.6">Reduction in development timeline<br><span style="color:var(--muted);font-size:0.75rem">zero model rebuild per client · reusable across all products</span></div>
-        </div>
-      </div>
-
-      <div class="proc-card fade-up" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--gold)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--borderg);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--gold)">⊟</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Data Modelling · Dynamic Filtering</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Date Dimension Table with Ranked Columns &amp; Config-Driven Filters</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Architected a comprehensive date dimension table in Snowflake — covering all date-related columns enriched with rank values for each period (day, week, month, quarter, year) — paired with a configuration table that drives all time period category filters dynamically across the application. Adding or modifying a time period filter requires only a configuration table update, with absolutely no code changes, no deployment, and no downtime.</div>
-        <div style="font-size:0.8rem;color:var(--goldlt);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--borderg)">↑ Fully dynamic time period filters · zero code changes · zero deployment effort</div>
-      </div>
-
-      <div class="proc-card fade-up" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--teal)">▦</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Planning · Project Management</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Effort Estimation &amp; Project Planning</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Introduced a structured effort estimation process for all incoming projects and features — breaking down requirements into granular tasks, assessing complexity, and mapping realistic timelines into a project plan. This ensured stakeholders had clear delivery expectations from day one, enabled the team to commit to achievable sprint goals, and gave leadership the visibility needed to prioritise effectively and allocate resources confidently.</div>
-        <div style="font-size:0.8rem;color:var(--teal2);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--border)">↑ Accurate delivery timelines · better resource planning · stronger stakeholder confidence</div>
-      </div>
-
-      <div class="proc-card fade-up fade-delay-1" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--teal)">◈</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Visibility · Operational Intelligence</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Adhoc Dashboards — Application &amp; JIRA Metrics</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Built targeted adhoc dashboards to surface operational intelligence that was previously invisible — including application usage metrics tracking user adoption, feature engagement, and usage trends across the platform, and JIRA effectiveness metrics measuring sprint velocity, ticket throughput, defect rates, and team delivery patterns. These dashboards gave leadership real-time visibility into both product health and team performance, enabling faster, evidence-based decisions on priorities and process adjustments.</div>
-        <div style="font-size:0.8rem;color:var(--teal2);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--border)">↑ Real-time visibility into product adoption &amp; team delivery · data-driven leadership decisions</div>
-      </div>
-
-      <div class="proc-card fade-up fade-delay-2" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--teal)">↺</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Agile · Continuous Improvement</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Retrospection Meetings</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Conducted regular retrospection meetings with the team to collectively reflect on what went well, what didn't, and what could be done better — creating a safe space for honest feedback and open discussion. Each session resulted in clearly identified areas of improvement and team-validated best practices to carry forward into the next sprint. This iterative loop of reflection and action built a culture of continuous improvement where the team owned their growth and held each other accountable to consistently raising the bar.</div>
-        <div style="font-size:0.8rem;color:var(--teal2);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--border)">↑ Continuous improvement culture · team-owned best practices · sprint-over-sprint growth</div>
-      </div>
-
-      <div class="proc-card fade-up" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--teal)">◎</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Stakeholder Clarity · Rework Elimination</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Proactive Stakeholder Clarity Meetings</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Introduced the practice of proactively reaching out to business stakeholders before development begins — scheduling focused clarity meetings to validate understanding, resolve ambiguities, and align on expected outcomes. These sessions replaced assumption-driven development with shared understanding, ensuring the team built exactly what the business needed from the very first iteration.</div>
-        <div style="font-size:0.8rem;color:var(--teal2);display:flex;align-items:center;gap:0.5rem;padding-top:1rem;border-top:1px solid var(--border)">↑ Eliminated assumption-driven rework · fewer mid-sprint pivots · faster delivery cycles</div>
-      </div>
-
-      <div class="proc-card fade-up fade-delay-1" style="background:var(--bg3);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color 0.25s">
-        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--gold)"></div>
-        <div style="width:40px;height:40px;border:1px solid var(--borderg);display:flex;align-items:center;justify-content:center;margin-bottom:1rem;font-size:1rem;color:var(--gold)">❄</div>
-        <div style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">AI Innovation · Real-Data Prototyping</div>
-        <div style="font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:600;margin-bottom:0.7rem;line-height:1.3">Streamlit Prototyping with Real Data for Stakeholder Validation</div>
-        <div style="font-size:0.82rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Introduced a real-data prototyping approach using <strong style="color:var(--white);font-weight:400">Snowflake + Cortex AI + Streamlit in Snowflake</strong> — building interactive KPI applications directly on live commercial field activity and performance data before committing to a full reporting dashboard. Stakeholders from commercial teams could see and validate actual numbers in real time, confirming business logic with data they could relate to. Once logic was signed off, the validated model was transformed into a production Power BI dashboard — completely eliminating the rework cycle that previously occurred when mock data assumptions didn't match real data behaviour.</div>
-        <div style="display:flex;align-items:center;gap:1rem;margin-top:0.5rem;padding-top:1rem;border-top:1px solid var(--borderg)">
-          <div style="font-size:0.8rem;color:var(--goldlt);line-height:1.6">
-            <div style="margin-bottom:0.3rem">✓ &nbsp;Zero mock-data rework · logic validated on real data before build</div>
-            <div style="margin-bottom:0.3rem">✓ &nbsp;Stakeholders confirmed KPI logic with numbers they recognised</div>
-            <div>✓ &nbsp;Streamlit prototype → production dashboard with no logic changes</div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
 <!-- CERTIFICATIONS & EDUCATION -->
@@ -1035,21 +889,21 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
             <div class="cert-icon">SQL</div>
             <div>
               <div class="cert-name">ORACLE Certified SQL Expert (OCA)</div>
-              <div class="cert-body">Oracle · Database Expert Certification</div>
+              <div class="cert-body">Oracle · Database Expert Certification · 2014</div>
             </div>
           </div>
           <div class="cert-item fade-up">
             <div class="cert-icon">DS</div>
             <div>
               <div class="cert-name">Master Certification in Data Science</div>
-              <div class="cert-body">Simplilearn · Advanced Data Science Program</div>
+              <div class="cert-body">Simplilearn · Advanced Data Science Program · 2020</div>
             </div>
           </div>
           <div class="cert-item fade-up">
             <div class="cert-icon">HX</div>
             <div>
               <div class="cert-name">AHM 250 — Introduction to Healthcare</div>
-              <div class="cert-body">AHIP · Health Insurance &amp; Payer Domain</div>
+              <div class="cert-body">AHIP · Health Insurance &amp; Payer Domain · 2012</div>
             </div>
           </div>
         </div>
