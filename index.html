@@ -203,6 +203,7 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
     <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#domain">Expertise</a></li>
+    <li><a href="#ai-projects">AI Projects</a></li>
     <li><a href="#ai-usage">AI</a></li>
     <li><a href="#improvements">Improvements</a></li>
     <li><a href="#certifications">Credentials</a></li>
@@ -220,7 +221,7 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
       <h1>Nivetha Jayaram Raja</h1>
       <div class="hero-title">Data Reporting &amp; Visualization · Snowflake &amp; AI Platforms · Clinical Analytics · Team Leadership</div>
       <p class="hero-desc">12+ years building AI-driven data solutions that transform complex clinical, commercial, and operational data into actionable intelligence — leading cross-functional teams of 24, driving strategic planning, data governance, and ETL/ELT pipeline design across cloud analytics environments.</p>
-      <p style="font-size:0.8rem;color:var(--teal2);margin-bottom:1.8rem;display:flex;align-items:center;gap:0.6rem"><span style="letter-spacing:0.12em;text-transform:uppercase;font-size:0.68rem;color:var(--muted)">Currently Exploring</span> <span style="color:var(--border)">|</span> Agentic AI &nbsp;·&nbsp; Generative AI</p>
+      <p style="font-size:0.8rem;color:var(--teal2);margin-bottom:1.8rem;display:flex;align-items:center;gap:0.6rem"><span style="letter-spacing:0.12em;text-transform:uppercase;font-size:0.68rem;color:var(--muted)">Built & Deployed</span> <span style="color:var(--border)">|</span> PharmaRAG &nbsp;·&nbsp; PharmaAgent &nbsp;·&nbsp; PharmaContent</p>
       <div class="btn-row">
         <a href="#experience" class="btn-primary">View Experience</a>
         <a href="Nivetha_Jayaram_Raja_Resume.pdf" download class="btn-ghost" style="display:flex;align-items:center;gap:0.5rem">⬇ Download Resume</a>
@@ -523,7 +524,89 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
   </div>
 </section>
 
-<!-- HOW I USE AI -->
+  <!-- AI PROJECTS SECTION -->
+<section id="ai-projects" style="padding: 4rem 2rem; background: #f8f9fa;">
+  <div style="max-width: 960px; margin: 0 auto;">
+    <p style="text-align:center; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; color:#0D7377; margin-bottom:0.5rem;">Live Portfolio</p>
+    <h2 style="text-align:center; font-size:1.8rem; font-weight:600; color:#1B3A6B; margin-bottom:0.5rem;">GenAI & Agentic AI Projects</h2>
+    <p style="text-align:center; color:#666; margin-bottom:3rem; font-size:0.95rem;">3 production-grade AI systems built on Snowflake Cortex — all live and publicly accessible</p>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+
+      <!-- Project 1 -->
+      <div style="background:#fff; border-radius:12px; border:1px solid #e0e0e0; padding:1.5rem; display:flex; flex-direction:column; gap:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <div style="background:#e8f5e9; border-radius:8px; padding:0.5rem; font-size:1.3rem;">📋</div>
+          <div>
+            <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:#0D7377;">Project 1</div>
+            <div style="font-size:1rem; font-weight:600; color:#1B3A6B;">PharmaRAG</div>
+          </div>
+        </div>
+        <p style="font-size:0.88rem; color:#555; line-height:1.6; margin:0;">RAG-based FDA Regulatory Knowledge Assistant — answers natural language questions over 40 FDA oncology guidance documents with mandatory citations and zero hallucinations.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:6px;">
+          <span style="background:#e8f5e9; color:#2e7d32; font-size:11px; padding:2px 8px; border-radius:10px;">87% accuracy</span>
+          <span style="background:#e3f2fd; color:#1565c0; font-size:11px; padding:2px 8px; border-radius:10px;">0% hallucination</span>
+          <span style="background:#f3e5f5; color:#6a1b9a; font-size:11px; padding:2px 8px; border-radius:10px;">1,011 chunks</span>
+          <span style="background:#fff8e1; color:#e65100; font-size:11px; padding:2px 8px; border-radius:10px;">13 dbt tests</span>
+        </div>
+        <div style="font-size:11px; color:#888; margin-top:4px;">Snowflake Cortex · PARSE_DOCUMENT · EMBED_TEXT_768 · Cortex Search · dbt · Streamlit</div>
+        <div style="display:flex; gap:0.75rem; margin-top:auto; padding-top:0.75rem; border-top:1px solid #f0f0f0;">
+          <a href="https://pharma-rag-assistant.streamlit.app" target="_blank" style="background:#1B3A6B; color:#fff; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; font-weight:500;">🔗 Live Demo</a>
+          <a href="https://github.com/nivethaj14/pharma-rag-assistant" target="_blank" style="background:#f5f5f5; color:#333; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; border:1px solid #ddd;">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div style="background:#fff; border-radius:12px; border:1px solid #e0e0e0; padding:1.5rem; display:flex; flex-direction:column; gap:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <div style="background:#e3f2fd; border-radius:8px; padding:0.5rem; font-size:1.3rem;">🧬</div>
+          <div>
+            <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:#0D7377;">Project 2</div>
+            <div style="font-size:1rem; font-weight:600; color:#1B3A6B;">PharmaAgent</div>
+          </div>
+        </div>
+        <p style="font-size:0.88rem; color:#555; line-height:1.6; margin:0;">Agentic Clinical Trial Copilot — LangGraph multi-agent system with pharmacovigilance signal detection using Reporting Odds Ratio on FDA FAERS data.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:6px;">
+          <span style="background:#e8f5e9; color:#2e7d32; font-size:11px; padding:2px 8px; border-radius:10px;">914 trials</span>
+          <span style="background:#e3f2fd; color:#1565c0; font-size:11px; padding:2px 8px; border-radius:10px;">21 signals detected</span>
+          <span style="background:#f3e5f5; color:#6a1b9a; font-size:11px; padding:2px 8px; border-radius:10px;">9 tools</span>
+          <span style="background:#fff8e1; color:#e65100; font-size:11px; padding:2px 8px; border-radius:10px;">Human-in-loop</span>
+        </div>
+        <div style="font-size:11px; color:#888; margin-top:4px;">LangGraph · LangChain · Snowflake Cortex · dbt · ClinicalTrials.gov · FDA FAERS · Streamlit</div>
+        <div style="display:flex; gap:0.75rem; margin-top:auto; padding-top:0.75rem; border-top:1px solid #f0f0f0;">
+          <a href="https://pharma-agent-copilot.streamlit.app" target="_blank" style="background:#1B3A6B; color:#fff; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; font-weight:500;">🔗 Live Demo</a>
+          <a href="https://github.com/nivethaj14/pharma-agent-copilot" target="_blank" style="background:#f5f5f5; color:#333; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; border:1px solid #ddd;">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div style="background:#fff; border-radius:12px; border:1px solid #e0e0e0; padding:1.5rem; display:flex; flex-direction:column; gap:0.75rem;">
+        <div style="display:flex; align-items:center; gap:0.75rem;">
+          <div style="background:#fff8e1; border-radius:8px; padding:0.5rem; font-size:1.3rem;">📝</div>
+          <div>
+            <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:#0D7377;">Project 3</div>
+            <div style="font-size:1rem; font-weight:600; color:#1B3A6B;">PharmaContent</div>
+          </div>
+        </div>
+        <p style="font-size:0.88rem; color:#555; line-height:1.6; margin:0;">GenAI Content Generator for Medical Affairs — MCP server with 6 standardized tools generating plain language summaries, competitive briefs, and regulatory context with full audit trail.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:6px;">
+          <span style="background:#e8f5e9; color:#2e7d32; font-size:11px; padding:2px 8px; border-radius:10px;">6 MCP tools</span>
+          <span style="background:#e3f2fd; color:#1565c0; font-size:11px; padding:2px 8px; border-radius:10px;">3 audiences</span>
+          <span style="background:#f3e5f5; color:#6a1b9a; font-size:11px; padding:2px 8px; border-radius:10px;">Full audit trail</span>
+          <span style="background:#fff8e1; color:#e65100; font-size:11px; padding:2px 8px; border-radius:10px;">MCP protocol</span>
+        </div>
+        <div style="font-size:11px; color:#888; margin-top:4px;">MCP · Snowflake Cortex · Mistral Large 2 · Python · Streamlit</div>
+        <div style="display:flex; gap:0.75rem; margin-top:auto; padding-top:0.75rem; border-top:1px solid #f0f0f0;">
+          <a href="https://pharma-content-generator.streamlit.app" target="_blank" style="background:#1B3A6B; color:#fff; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; font-weight:500;">🔗 Live Demo</a>
+          <a href="https://github.com/nivethaj14/pharma-content-generator" target="_blank" style="background:#f5f5f5; color:#333; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; border:1px solid #ddd;">GitHub</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- END AI PROJECTS SECTION -->
+  <!-- HOW I USE AI -->
 <section id="ai-usage" style="background:var(--bg)">
   <div class="section-inner">
     <div class="section-label">AI in Practice</div>
