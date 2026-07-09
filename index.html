@@ -23,16 +23,12 @@
 }
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--white);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
-
-/* ── NAV ── */
 nav{position:fixed;top:0;left:0;right:0;z-index:100;padding:1.1rem 4rem;display:flex;justify-content:space-between;align-items:center;background:rgba(8,17,30,0.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--border)}
 .nav-logo{font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600;color:var(--teal);letter-spacing:0.03em}
 .nav-sub{font-size:0.7rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--muted);margin-top:1px}
 .nav-links{display:flex;gap:2rem;list-style:none}
 .nav-links a{color:var(--muted);text-decoration:none;font-size:0.78rem;letter-spacing:0.12em;text-transform:uppercase;transition:color 0.2s}
 .nav-links a:hover{color:var(--teal2)}
-
-/* ── HERO ── */
 #hero{min-height:100vh;display:flex;align-items:center;padding:8rem 4rem 4rem;position:relative;overflow:hidden}
 .hero-grid{display:grid;grid-template-columns:1.1fr 0.9fr;gap:5rem;align-items:center;max-width:1180px;margin:0 auto;width:100%}
 .hero-eyebrow{font-size:0.74rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--teal2);margin-bottom:1rem;display:flex;align-items:center;gap:0.8rem}
@@ -46,7 +42,6 @@ h1 em{font-style:italic;color:var(--teal2)}
 .btn-primary:hover{background:var(--teal2)}
 .btn-ghost{padding:0.8rem 1.9rem;border:1px solid var(--border);color:var(--muted);font-size:0.78rem;letter-spacing:0.1em;text-transform:uppercase;text-decoration:none;transition:all 0.2s}
 .btn-ghost:hover{border-color:var(--teal);color:var(--teal)}
-
 .hero-panel{background:var(--bg2);border:1px solid var(--border);padding:2rem;position:relative}
 .hero-panel::before{content:'';position:absolute;top:-1px;left:2rem;width:3rem;height:2px;background:var(--teal)}
 .avail{font-size:0.78rem;color:var(--muted);display:flex;align-items:center;gap:0.5rem;margin-bottom:1.5rem}
@@ -58,8 +53,6 @@ h1 em{font-style:italic;color:var(--teal2)}
 .stat-item .lbl{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-top:0.2rem}
 .lang-row{margin-top:1.5rem;padding-top:1.2rem;border-top:1px solid var(--border);display:flex;gap:0.6rem;flex-wrap:wrap}
 .lang-badge{font-size:0.72rem;letter-spacing:0.08em;padding:0.25rem 0.7rem;border:1px solid var(--border);color:var(--muted)}
-
-/* ── SECTION COMMONS ── */
 section{padding:5.5rem 4rem}
 .section-inner{max-width:1180px;margin:0 auto}
 .section-label{font-size:0.72rem;letter-spacing:0.22em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.7rem;display:flex;align-items:center;gap:0.7rem}
@@ -67,8 +60,6 @@ section{padding:5.5rem 4rem}
 h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:600;line-height:1.2;margin-bottom:0.5rem}
 .section-sub{color:var(--muted);font-size:0.9rem;max-width:540px;margin-bottom:2.8rem;line-height:1.8}
 .divider{width:100%;height:1px;background:var(--border);margin:0 0 2.8rem}
-
-/* ── IMPACT METRICS ── */
 #metrics{background:var(--bg2)}
 .metrics-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--border)}
 .metric-card{background:var(--bg2);padding:2.5rem 1.8rem;text-align:center;position:relative;overflow:hidden;transition:background 0.25s}
@@ -79,24 +70,15 @@ h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:600;line-
 .metric-unit{font-size:1.5rem;vertical-align:super}
 .metric-label{font-size:0.74rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--gold);margin-top:0.4rem}
 .metric-desc{font-size:0.8rem;color:var(--muted);margin-top:0.35rem;line-height:1.5}
-
-/* ── SKILLS ── */
 #skills{background:var(--bg)}
 .skills-layout{display:grid;grid-template-columns:1fr 1fr;gap:4.5rem}
 .skill-group{margin-bottom:2.5rem}
 .skill-group h3{font-size:0.72rem;letter-spacing:0.16em;text-transform:uppercase;color:var(--teal2);margin-bottom:1.3rem;padding-bottom:0.7rem;border-bottom:1px solid var(--border)}
-.skill-bar{margin-bottom:1.1rem}
-.skill-row{display:flex;justify-content:space-between;font-size:0.84rem;margin-bottom:0.35rem}
-.skill-pct{color:var(--muted);font-size:0.75rem}
-.bar-track{height:1.5px;background:rgba(26,158,142,0.14)}
-.bar-fill{height:100%;background:linear-gradient(90deg,var(--teal),var(--teal2));transform:scaleX(0);transform-origin:left;transition:transform 1.3s cubic-bezier(.22,1,.36,1)}
 .tags-wrap{display:flex;flex-wrap:wrap;gap:0.55rem}
 .tag{padding:0.35rem 0.9rem;border:1px solid var(--border);font-size:0.75rem;letter-spacing:0.06em;color:var(--muted);transition:all 0.2s;cursor:default}
 .tag:hover{border-color:var(--teal);color:var(--teal2)}
 .tag.gold{border-color:var(--borderg);color:var(--gold)}
 .tag.gold:hover{border-color:var(--gold)}
-
-/* ── EXPERIENCE ── */
 #experience{background:var(--bg2)}
 .exp-timeline{position:relative;padding-left:1.8rem}
 .exp-timeline::before{content:'';position:absolute;left:0;top:0.6rem;bottom:0;width:1px;background:var(--border)}
@@ -112,8 +94,6 @@ h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:600;line-
 .exp-points li{font-size:0.88rem;color:var(--white);opacity:0.75;padding:0.3rem 0 0.3rem 1.2rem;position:relative;line-height:1.7}
 .exp-points li::before{content:'›';position:absolute;left:0;color:var(--teal2);font-size:0.85rem;top:0.3rem}
 .exp-highlight{display:inline;background:rgba(26,158,142,0.1);color:var(--teal2);padding:0.05rem 0.3rem;font-size:0.82rem}
-
-/* ── ACHIEVEMENTS ── */
 #achievements{background:var(--bg)}
 .ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .ach-card{background:var(--bg2);border:1px solid var(--border);padding:1.8rem;position:relative;transition:border-color 0.25s}
@@ -123,8 +103,6 @@ h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:600;line-
 .ach-val{font-family:'Cormorant Garamond',serif;font-size:2.2rem;font-weight:600;color:var(--gold);line-height:1;margin-bottom:0.3rem}
 .ach-title{font-size:0.82rem;font-weight:500;margin-bottom:0.5rem;color:var(--white)}
 .ach-desc{font-size:0.8rem;color:var(--muted);line-height:1.65}
-
-/* ── DOMAIN EXPERTISE TIMELINE ── */
 #domain{background:var(--bg2)}
 .domain-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .domain-card{background:var(--bg3);border:1px solid var(--border);padding:1.8rem;transition:border-color 0.25s}
@@ -133,8 +111,6 @@ h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:600;line-
 .domain-label{font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem}
 .domain-title{font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;margin-bottom:0.6rem;line-height:1.3}
 .domain-desc{font-size:0.81rem;color:var(--muted);line-height:1.65}
-
-/* ── CERTIFICATIONS ── */
 #certifications{background:var(--bg)}
 .cert-awards-grid{display:grid;grid-template-columns:1fr 1fr;gap:4rem}
 .cert-list{display:flex;flex-direction:column;gap:1rem}
@@ -150,8 +126,6 @@ h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:600;line-
 .award-body{font-size:0.72rem;color:var(--muted);margin-top:0.2rem}
 .edu-card{margin-top:2rem;padding:1.5rem;background:var(--bg2);border:1px solid var(--border);position:relative}
 .edu-card::before{content:'';position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--gold)}
-
-/* ── CONTACT ── */
 #contact{background:var(--bg2);text-align:center}
 #contact .section-inner{max-width:620px}
 #contact h2{font-size:3rem;margin-bottom:1rem}
@@ -162,21 +136,56 @@ h2{font-family:'Cormorant Garamond',serif;font-size:2.7rem;font-weight:600;line-
 .contact-card-icon{font-size:1.2rem;color:var(--teal2);margin-bottom:0.5rem}
 .contact-card-label{font-size:0.7rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);margin-bottom:0.3rem}
 .contact-card-value{font-size:0.82rem;color:var(--white);word-break:break-all}
-
-/* ── FOOTER ── */
 footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:0.76rem;color:var(--muted)}
-
-/* ── FADE ANIMATIONS ── */
 .fade-up{opacity:0;transform:translateY(22px);transition:opacity 0.7s ease,transform 0.7s ease}
 .fade-up.visible{opacity:1;transform:translateY(0)}
 .fade-delay-1{transition-delay:0.1s}
 .fade-delay-2{transition-delay:0.2s}
 .fade-delay-3{transition-delay:0.3s}
-
-/* ── DECORATIVE BG ── */
 .hero-glow{position:absolute;top:10%;right:5%;width:480px;height:480px;border-radius:50%;background:radial-gradient(circle,rgba(26,158,142,0.06) 0%,transparent 70%);pointer-events:none}
 .hero-glow2{position:absolute;bottom:5%;left:10%;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(212,168,67,0.04) 0%,transparent 70%);pointer-events:none}
-
+.skill-cat-header{display:flex;align-items:center;gap:1rem}
+.skill-level{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;padding:0.3rem 0.9rem;white-space:nowrap;font-weight:500}
+.skill-level.expert{color:var(--teal2);border:1px solid var(--teal);background:rgba(26,158,142,0.08)}
+.skill-level.proficient{color:var(--gold);border:1px solid var(--borderg);background:rgba(212,168,67,0.07)}
+.skill-level.familiar{color:var(--muted);border:1px solid rgba(122,153,176,0.3);background:rgba(122,153,176,0.05)}
+.skill-level.domain{color:var(--goldlt);border:1px solid rgba(240,204,110,0.25);background:rgba(240,204,110,0.05)}
+.skill-cat-line{flex:1;height:1px;background:var(--border)}
+.stag{padding:0.4rem 1rem;font-size:0.8rem;letter-spacing:0.04em;transition:all 0.2s;cursor:default}
+.stag.expert{border:1px solid rgba(26,158,142,0.35);color:var(--teal2);background:rgba(26,158,142,0.05)}
+.stag.expert:hover{background:rgba(26,158,142,0.12);border-color:var(--teal2)}
+.stag.proficient{border:1px solid rgba(212,168,67,0.25);color:var(--goldlt);background:rgba(212,168,67,0.04)}
+.stag.proficient:hover{background:rgba(212,168,67,0.1);border-color:var(--gold)}
+.stag.familiar{border:1px solid rgba(122,153,176,0.2);color:var(--muted);background:transparent}
+.stag.familiar:hover{border-color:rgba(122,153,176,0.5);color:var(--white)}
+.stag.domain{border:1px solid rgba(240,204,110,0.2);color:var(--muted);background:transparent}
+.stag.domain:hover{border-color:var(--goldlt);color:var(--goldlt)}
+.acc-list{display:flex;flex-direction:column;gap:0.5rem}
+.acc-item{border:1px solid var(--border);background:var(--bg3);cursor:pointer;transition:border-color 0.2s;position:relative;overflow:hidden}
+.acc-item::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--teal);opacity:0;transition:opacity 0.2s}
+.acc-item.gold::before{background:var(--gold)}
+.acc-item:hover,.acc-item.open{border-color:rgba(26,158,142,0.4)}
+.acc-item.gold:hover,.acc-item.gold.open{border-color:rgba(212,168,67,0.35)}
+.acc-item:hover::before,.acc-item.open::before{opacity:1}
+.acc-header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.4rem;gap:1rem}
+.acc-left{display:flex;align-items:center;gap:1rem}
+.acc-icon{width:32px;height:32px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:0.85rem;flex-shrink:0}
+.acc-icon.teal{color:var(--teal2);border-color:var(--border)}
+.acc-icon.gold{color:var(--gold);border-color:var(--borderg)}
+.acc-tag{font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.2rem}
+.acc-tag.teal{color:var(--teal2)}
+.acc-tag.gold{color:var(--gold)}
+.acc-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;line-height:1.3;color:var(--white)}
+.acc-right{display:flex;align-items:center;gap:1.2rem;flex-shrink:0}
+.acc-outcome{font-size:0.75rem;color:var(--muted);text-align:right;max-width:220px}
+.acc-outcome.teal{color:var(--teal2)}
+.acc-outcome.gold{color:var(--goldlt)}
+.acc-chevron{width:24px;height:24px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--muted);transition:transform 0.3s,color 0.2s;flex-shrink:0;line-height:1}
+.acc-chevron.gold{border-color:var(--borderg)}
+.acc-item.open .acc-chevron{transform:rotate(45deg);color:var(--teal2)}
+.acc-item.gold.open .acc-chevron{color:var(--gold)}
+.acc-body{font-size:0.86rem;color:var(--muted);line-height:1.8;max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease;padding:0 1.4rem}
+.acc-item.open .acc-body{max-height:300px;padding:0 1.4rem 1.3rem}
 @media(max-width:900px){
   nav{padding:1rem 1.5rem}
   .nav-links{gap:1rem}
@@ -187,6 +196,8 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
   h1{font-size:2.6rem}
   h2{font-size:2rem}
   footer{flex-direction:column;gap:0.5rem;text-align:center;padding:1.5rem}
+  .acc-outcome{display:none}
+  .acc-right{gap:0.8rem}
 }
 </style>
 </head>
@@ -221,7 +232,7 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
       <h1>Nivetha Jayaram Raja</h1>
       <div class="hero-title">Data Reporting &amp; Visualization · Snowflake &amp; AI Platforms · Clinical Analytics · Team Leadership</div>
       <p class="hero-desc">12+ years building AI-driven data solutions that transform complex clinical, commercial, and operational data into actionable intelligence — leading cross-functional teams of 24, driving strategic planning, data governance, and ETL/ELT pipeline design across cloud analytics environments.</p>
-      <p style="font-size:0.8rem;color:var(--teal2);margin-bottom:1.8rem;display:flex;align-items:center;gap:0.6rem"><span style="letter-spacing:0.12em;text-transform:uppercase;font-size:0.68rem;color:var(--muted)">Built & Deployed</span> <span style="color:var(--border)">|</span> PharmaRAG &nbsp;·&nbsp; PharmaAgent &nbsp;·&nbsp; PharmaContent</p>
+      <p style="font-size:0.8rem;color:var(--teal2);margin-bottom:1.8rem;display:flex;align-items:center;gap:0.6rem"><span style="letter-spacing:0.12em;text-transform:uppercase;font-size:0.68rem;color:var(--muted)">Built &amp; Deployed</span> <span style="color:var(--border)">|</span> PharmaRAG &nbsp;·&nbsp; PharmaAgent &nbsp;·&nbsp; PharmaContent</p>
       <div class="btn-row">
         <a href="#experience" class="btn-primary">View Experience</a>
         <a href="Nivetha_Jayaram_Raja_Resume.pdf" download class="btn-ghost" style="display:flex;align-items:center;gap:0.5rem">⬇ Download Resume</a>
@@ -254,7 +265,7 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           </div>
           <div class="stat-item">
             <div class="num"><span class="counter" data-target="3">0</span></div>
-            <div class="lbl">Certifications</div>
+            <div class="lbl">Live AI Projects</div>
           </div>
         </div>
         <div class="lang-row">
@@ -266,12 +277,19 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
     </div>
   </div>
 </section>
+
+<!-- METRICS -->
 <section id="metrics">
   <div class="section-inner">
     <div class="section-label">Quantified Impact</div>
     <h2>Key Outcomes Delivered</h2>
     <p class="section-sub">Measurable results across analytics leadership, platform engineering, and team development.</p>
     <div class="metrics-grid fade-up">
+      <div class="metric-card">
+        <div class="metric-num"><span class="counter" data-target="87">0</span><span class="metric-unit">%</span></div>
+        <div class="metric-label">RAG Retrieval Accuracy</div>
+        <div class="metric-desc">PharmaRAG — FDA regulatory knowledge assistant with 0% hallucination rate</div>
+      </div>
       <div class="metric-card">
         <div class="metric-num"><span class="counter" data-target="40">0</span><span class="metric-unit">%</span></div>
         <div class="metric-label">Performance Improvement</div>
@@ -283,14 +301,9 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
         <div class="metric-desc">Cross-functional team delivering AI-powered analytics for clinical &amp; commercial operations</div>
       </div>
       <div class="metric-card">
-        <div class="metric-num"><span class="counter" data-target="12">0</span><span class="metric-unit">+</span></div>
-        <div class="metric-label">Years of Expertise</div>
-        <div class="metric-desc">Data analytics, reporting, visualization and AI — from healthcare payer to clinical trials</div>
-      </div>
-      <div class="metric-card">
-        <div class="metric-num"><span class="counter" data-target="3">0</span><span class="metric-unit">+</span></div>
-        <div class="metric-label">Industries Served</div>
-        <div class="metric-desc">Healthcare, Pharma, Clinical Trials, and Commercial Analytics — deep domain knowledge</div>
+        <div class="metric-num"><span class="counter" data-target="3">0</span></div>
+        <div class="metric-label">Live AI Projects</div>
+        <div class="metric-desc">PharmaRAG · PharmaAgent · PharmaContent — all deployed on Snowflake Cortex</div>
       </div>
     </div>
   </div>
@@ -301,9 +314,8 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
   <div class="section-inner">
     <div class="section-label">Technical Expertise</div>
     <h2>Skills &amp; Tools</h2>
-    <p class="section-sub">A broad, production-grade toolkit spanning AI platforms, cloud data infrastructure, visualization, and engineering leadership.</p>
+    <p class="section-sub">A broad, production-grade toolkit spanning GenAI, Agentic AI, cloud data infrastructure, BI, and engineering leadership.</p>
     <div class="divider"></div>
-
     <div style="display:flex;flex-direction:column;gap:2rem">
 
       <!-- Expert -->
@@ -315,6 +327,10 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
         <div class="tags-wrap" style="margin-top:1rem">
           <span class="stag expert">Snowflake</span>
           <span class="stag expert">Snowflake Cortex AI</span>
+          <span class="stag expert">RAG (Retrieval-Augmented Generation)</span>
+          <span class="stag expert">Agentic AI</span>
+          <span class="stag expert">LangGraph</span>
+          <span class="stag expert">MCP (Model Context Protocol)</span>
           <span class="stag expert">SQL &amp; PL/SQL</span>
           <span class="stag expert">Power BI</span>
           <span class="stag expert">Data Modelling</span>
@@ -336,23 +352,26 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <span class="skill-cat-line"></span>
         </div>
         <div class="tags-wrap" style="margin-top:1rem">
-          <span class="stag proficient">Tableau</span>
-          <span class="stag proficient">Databricks</span>
+          <span class="stag proficient">LangChain</span>
           <span class="stag proficient">dbt (Data Build Tool)</span>
           <span class="stag proficient">Python</span>
           <span class="stag proficient">Streamlit</span>
+          <span class="stag proficient">Prompt Engineering</span>
+          <span class="stag proficient">LLM Application Development</span>
+          <span class="stag proficient">Vector Embeddings</span>
+          <span class="stag proficient">Cortex Search</span>
+          <span class="stag proficient">Pharmacovigilance Signal Detection</span>
+          <span class="stag proficient">Tableau</span>
+          <span class="stag proficient">Databricks</span>
           <span class="stag proficient">ETL / ELT</span>
           <span class="stag proficient">Cloud Analytics</span>
-          <span class="stag proficient">Jasper Reports</span>
-          <span class="stag proficient">Crystal Reports</span>
-          <span class="stag proficient">Full SDLC Management</span>
-          <span class="stag proficient">JIRA &amp; Confluence</span>
           <span class="stag proficient">AI-Powered Reporting</span>
+          <span class="stag proficient">Star Schema Design</span>
           <span class="stag proficient">Predictive Analytics</span>
           <span class="stag proficient">Natural Language Querying</span>
-          <span class="stag proficient">Self-Service Analytics</span>
-          <span class="stag proficient">Star Schema Design</span>
           <span class="stag proficient">ChatGPT &amp; GitHub Copilot</span>
+          <span class="stag proficient">Jasper Reports</span>
+          <span class="stag proficient">JIRA &amp; Confluence</span>
         </div>
       </div>
 
@@ -363,6 +382,10 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <span class="skill-cat-line"></span>
         </div>
         <div class="tags-wrap" style="margin-top:1rem">
+          <span class="stag familiar">CrewAI</span>
+          <span class="stag familiar">AutoGen</span>
+          <span class="stag familiar">LlamaIndex</span>
+          <span class="stag familiar">GraphRAG</span>
           <span class="stag familiar">KSQL</span>
           <span class="stag familiar">JavaScript</span>
           <span class="stag familiar">HTML</span>
@@ -379,7 +402,9 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <span class="skill-cat-line"></span>
         </div>
         <div class="tags-wrap" style="margin-top:1rem">
-          <span class="stag domain">Clinical Trials</span>
+          <span class="stag domain">Clinical Trials (ClinicalTrials.gov)</span>
+          <span class="stag domain">Pharmacovigilance (FDA FAERS)</span>
+          <span class="stag domain">Regulatory Affairs (FDA Guidance)</span>
           <span class="stag domain">Pharma Commercial Analytics</span>
           <span class="stag domain">HR Analytics</span>
           <span class="stag domain">Healthcare Payer Systems</span>
@@ -392,26 +417,6 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
   </div>
 </section>
 
-<style>
-.skill-cat-header{display:flex;align-items:center;gap:1rem}
-.skill-level{font-size:0.68rem;letter-spacing:0.18em;text-transform:uppercase;padding:0.3rem 0.9rem;white-space:nowrap;font-weight:500}
-.skill-level.expert{color:var(--teal2);border:1px solid var(--teal);background:rgba(26,158,142,0.08)}
-.skill-level.proficient{color:var(--gold);border:1px solid var(--borderg);background:rgba(212,168,67,0.07)}
-.skill-level.familiar{color:var(--muted);border:1px solid rgba(122,153,176,0.3);background:rgba(122,153,176,0.05)}
-.skill-level.domain{color:var(--goldlt);border:1px solid rgba(240,204,110,0.25);background:rgba(240,204,110,0.05)}
-.skill-cat-line{flex:1;height:1px;background:var(--border)}
-.stag{padding:0.4rem 1rem;font-size:0.8rem;letter-spacing:0.04em;transition:all 0.2s;cursor:default}
-.stag.expert{border:1px solid rgba(26,158,142,0.35);color:var(--teal2);background:rgba(26,158,142,0.05)}
-.stag.expert:hover{background:rgba(26,158,142,0.12);border-color:var(--teal2)}
-.stag.proficient{border:1px solid rgba(212,168,67,0.25);color:var(--goldlt);background:rgba(212,168,67,0.04)}
-.stag.proficient:hover{background:rgba(212,168,67,0.1);border-color:var(--gold)}
-.stag.familiar{border:1px solid rgba(122,153,176,0.2);color:var(--muted);background:transparent}
-.stag.familiar:hover{border-color:rgba(122,153,176,0.5);color:var(--white)}
-.stag.domain{border:1px solid rgba(240,204,110,0.2);color:var(--muted);background:transparent}
-.stag.domain:hover{border-color:var(--goldlt);color:var(--goldlt)}
-</style>
-
-
 <!-- EXPERIENCE -->
 <section id="experience">
   <div class="section-inner">
@@ -420,8 +425,6 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
     <p class="section-sub">12+ years of progressive data, analytics, and AI leadership — from healthcare payer solutions to clinical trial intelligence platforms.</p>
     <div class="divider"></div>
     <div class="exp-timeline">
-
-      <!-- Role 1 -->
       <div class="exp-item fade-up">
         <div class="exp-dot"></div>
         <div class="exp-header">
@@ -434,10 +437,9 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <li>Lead <span class="exp-highlight">24 engineers &amp; analysts</span> delivering AI-powered analytics on Snowflake, Cortex AI &amp; Power BI — achieving a <span class="exp-highlight">40% dashboard performance improvement</span> and driving executive decision-making across clinical, commercial, and HR functions</li>
           <li>Designed a unified star schema data model supporting multi-client &amp; multi-product architecture — reducing development timelines by <span class="exp-highlight">50%</span> and enabling new client onboarding with zero rework</li>
           <li>Lead full Agile Scrum delivery and stakeholder engagement — translating complex business requirements into scalable analytics solutions while mentoring the team on Snowflake, Cortex AI, and best practices</li>
+          <li>Built 3 production-grade GenAI &amp; Agentic AI projects — <span class="exp-highlight">PharmaRAG</span> (87% RAG accuracy), <span class="exp-highlight">PharmaAgent</span> (LangGraph multi-agent with pharmacovigilance signal detection), <span class="exp-highlight">PharmaContent</span> (MCP-based content generator with audit trail) — all live on Snowflake Cortex</li>
         </ul>
       </div>
-
-      <!-- Role 2 -->
       <div class="exp-item fade-up">
         <div class="exp-dot"></div>
         <div class="exp-header">
@@ -450,8 +452,6 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <li>Converted HTML reports to <span class="exp-highlight">Jasper Reports</span>, led requirements analysis for RFEs, resolved data quality issues, and designed UI/UX mockups in <span class="exp-highlight">Adobe XD</span> — improving reporting delivery time and user experience</li>
         </ul>
       </div>
-
-      <!-- Role 3 -->
       <div class="exp-item fade-up">
         <div class="exp-dot break"></div>
         <div class="exp-header">
@@ -464,7 +464,6 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <li style="opacity:0.6">Took a deliberate career break following marriage and the birth of my child — a personal choice to prioritise family during a significant life transition. Remained engaged with the data and analytics space through self-directed learning, returning to the workforce in 2020 with renewed focus and commitment.</li>
         </ul>
       </div>
-
       <div class="exp-item fade-up">
         <div class="exp-dot"></div>
         <div class="exp-header">
@@ -477,7 +476,6 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <li>Led design, build, and enhancement of healthcare payer solutions across <span class="exp-highlight">membership, claims, and benefits modules</span> for multiple US clients — managing defect resolution, tracking delivery metrics, and improving operational efficiency across enrollment and claims processing</li>
         </ul>
       </div>
-
     </div>
   </div>
 </section>
@@ -494,25 +492,31 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
         <div class="domain-icon">❄</div>
         <div class="domain-label">Cloud Platform</div>
         <div class="domain-title">Snowflake &amp; Cortex AI</div>
-        <div class="domain-desc">End-to-end architecture of Snowflake-based analytics platforms integrating Cortex AI for natural language querying, automated summaries, and intelligent self-service reporting.</div>
+        <div class="domain-desc">End-to-end architecture of Snowflake-based analytics platforms integrating Cortex AI for RAG, agentic workflows, embeddings, semantic search, and intelligent self-service reporting.</div>
       </div>
       <div class="domain-card fade-up fade-delay-1">
+        <div class="domain-icon">🧬</div>
+        <div class="domain-label">Agentic AI</div>
+        <div class="domain-title">LangGraph Multi-Agent Systems</div>
+        <div class="domain-desc">Built stateful multi-agent orchestration with LangGraph — conditional routing, agent-to-agent handoff, tool use, ReAct pattern, and human-in-the-loop review for safety-critical pharma outputs.</div>
+      </div>
+      <div class="domain-card fade-up fade-delay-2">
         <div class="domain-icon">⬡</div>
         <div class="domain-label">Business Intelligence</div>
         <div class="domain-title">Executive Dashboards &amp; Power BI</div>
         <div class="domain-desc">Design and delivery of executive-level Power BI dashboards tracking application usage trends, clinical KPIs, and operational performance — driving C-suite decision-making.</div>
       </div>
-      <div class="domain-card fade-up fade-delay-2">
+      <div class="domain-card fade-up">
         <div class="domain-icon">⊕</div>
         <div class="domain-label">Healthcare &amp; Clinical</div>
-        <div class="domain-title">Clinical Trials Analytics</div>
-        <div class="domain-desc">Deep expertise in clinical trial data, pharma commercial analytics, and healthcare payer systems — membership, claims, benefits, and enrollment data across US markets.</div>
+        <div class="domain-title">Clinical Trials &amp; Pharmacovigilance</div>
+        <div class="domain-desc">Deep expertise in clinical trial data (ClinicalTrials.gov), FDA FAERS pharmacovigilance signal detection using Reporting Odds Ratio, FDA regulatory guidance documents, and healthcare payer systems.</div>
       </div>
-      <div class="domain-card fade-up">
+      <div class="domain-card fade-up fade-delay-1">
         <div class="domain-icon">◉</div>
         <div class="domain-label">Team Leadership</div>
         <div class="domain-title">Engineering &amp; Analytics Teams</div>
-        <div class="domain-desc">Leads and mentors cross-functional engineering teams through best practices in Snowflake development, Cortex AI, data visualization, and Agile delivery — fostering a culture of continuous improvement and technical growth.</div>
+        <div class="domain-desc">Leads and mentors cross-functional engineering teams through best practices in Snowflake development, Cortex AI, dbt pipelines, data visualization, and Agile delivery.</div>
       </div>
       <div class="domain-card fade-up fade-delay-2">
         <div class="domain-icon">✦</div>
@@ -524,99 +528,99 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
   </div>
 </section>
 
-  <!-- AI PROJECTS SECTION -->
-<section id="ai-projects" style="padding: 4rem 2rem; background: #f8f9fa;">
-  <div style="max-width: 960px; margin: 0 auto;">
-    <p style="text-align:center; font-size:12px; font-weight:600; text-transform:uppercase; letter-spacing:.1em; color:#0D7377; margin-bottom:0.5rem;">Live Portfolio</p>
-    <h2 style="text-align:center; font-size:1.8rem; font-weight:600; color:#1B3A6B; margin-bottom:0.5rem;">GenAI & Agentic AI Projects</h2>
-    <p style="text-align:center; color:#666; margin-bottom:3rem; font-size:0.95rem;">3 production-grade AI systems built on Snowflake Cortex — all live and publicly accessible</p>
-
-    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:1.5rem;">
+<!-- AI PROJECTS SECTION -->
+<section id="ai-projects" style="background:var(--bg)">
+  <div class="section-inner">
+    <div class="section-label">Live Portfolio</div>
+    <h2>GenAI &amp; Agentic AI Projects</h2>
+    <p class="section-sub">3 production-grade AI systems built on Snowflake Cortex — all live and publicly accessible. Real data, real pipelines, real outputs.</p>
+    <div class="divider"></div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem">
 
       <!-- Project 1 -->
-      <div style="background:#fff; border-radius:12px; border:1px solid #e0e0e0; padding:1.5rem; display:flex; flex-direction:column; gap:0.75rem;">
-        <div style="display:flex; align-items:center; gap:0.75rem;">
-          <div style="background:#e8f5e9; border-radius:8px; padding:0.5rem; font-size:1.3rem;">📋</div>
+      <div style="background:var(--bg2);border:1px solid var(--border);padding:1.8rem;position:relative;transition:border-color 0.25s" onmouseover="this.style.borderColor='var(--teal)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem">
+          <div style="width:44px;height:44px;background:rgba(26,158,142,0.08);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0">📋</div>
           <div>
-            <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:#0D7377;">Project 1</div>
-            <div style="font-size:1rem; font-weight:600; color:#1B3A6B;">PharmaRAG</div>
+            <div style="font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.2rem">Project 1</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600">PharmaRAG</div>
           </div>
         </div>
-        <p style="font-size:0.88rem; color:#555; line-height:1.6; margin:0;">RAG-based FDA Regulatory Knowledge Assistant — answers natural language questions over 40 FDA oncology guidance documents with mandatory citations and zero hallucinations.</p>
-        <div style="display:flex; flex-wrap:wrap; gap:6px;">
-          <span style="background:#e8f5e9; color:#2e7d32; font-size:11px; padding:2px 8px; border-radius:10px;">87% accuracy</span>
-          <span style="background:#e3f2fd; color:#1565c0; font-size:11px; padding:2px 8px; border-radius:10px;">0% hallucination</span>
-          <span style="background:#f3e5f5; color:#6a1b9a; font-size:11px; padding:2px 8px; border-radius:10px;">1,011 chunks</span>
-          <span style="background:#fff8e1; color:#e65100; font-size:11px; padding:2px 8px; border-radius:10px;">13 dbt tests</span>
+        <p style="font-size:0.86rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">RAG-based FDA Regulatory Knowledge Assistant — answers natural language questions over 40 FDA oncology guidance documents with mandatory citations and zero hallucinations.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.2rem">
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2)">87% accuracy</span>
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2)">0% hallucination</span>
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid var(--borderg);color:var(--gold)">1,011 chunks</span>
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid var(--borderg);color:var(--gold)">13 dbt tests</span>
         </div>
-        <div style="font-size:11px; color:#888; margin-top:4px;">Snowflake Cortex · PARSE_DOCUMENT · EMBED_TEXT_768 · Cortex Search · dbt · Streamlit</div>
-        <div style="display:flex; gap:0.75rem; margin-top:auto; padding-top:0.75rem; border-top:1px solid #f0f0f0;">
-          <a href="https://pharma-rag-assistant.streamlit.app" target="_blank" style="background:#1B3A6B; color:#fff; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; font-weight:500;">🔗 Live Demo</a>
-          <a href="https://github.com/nivethaj14/pharma-rag-assistant" target="_blank" style="background:#f5f5f5; color:#333; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; border:1px solid #ddd;">GitHub</a>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1.2rem">Snowflake Cortex · PARSE_DOCUMENT · EMBED_TEXT_768 · Cortex Search · Mistral Large 2 · dbt · Streamlit</div>
+        <div style="display:flex;gap:0.75rem;padding-top:1rem;border-top:1px solid var(--border)">
+          <a href="https://pharma-rag-assistant.streamlit.app" target="_blank" style="padding:0.5rem 1.2rem;background:var(--teal);color:var(--bg);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='var(--teal2)'" onmouseout="this.style.background='var(--teal)'">Live Demo</a>
+          <a href="https://github.com/nivethaj14/pharma-rag-assistant" target="_blank" style="padding:0.5rem 1.2rem;border:1px solid var(--border);color:var(--muted);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.2s" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal2)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">GitHub</a>
         </div>
       </div>
 
       <!-- Project 2 -->
-      <div style="background:#fff; border-radius:12px; border:1px solid #e0e0e0; padding:1.5rem; display:flex; flex-direction:column; gap:0.75rem;">
-        <div style="display:flex; align-items:center; gap:0.75rem;">
-          <div style="background:#e3f2fd; border-radius:8px; padding:0.5rem; font-size:1.3rem;">🧬</div>
+      <div style="background:var(--bg2);border:1px solid var(--border);padding:1.8rem;position:relative;transition:border-color 0.25s" onmouseover="this.style.borderColor='var(--teal)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem">
+          <div style="width:44px;height:44px;background:rgba(26,158,142,0.08);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0">🧬</div>
           <div>
-            <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:#0D7377;">Project 2</div>
-            <div style="font-size:1rem; font-weight:600; color:#1B3A6B;">PharmaAgent</div>
+            <div style="font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.2rem">Project 2</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600">PharmaAgent</div>
           </div>
         </div>
-        <p style="font-size:0.88rem; color:#555; line-height:1.6; margin:0;">Agentic Clinical Trial Copilot — LangGraph multi-agent system with pharmacovigilance signal detection using Reporting Odds Ratio on FDA FAERS data.</p>
-        <div style="display:flex; flex-wrap:wrap; gap:6px;">
-          <span style="background:#e8f5e9; color:#2e7d32; font-size:11px; padding:2px 8px; border-radius:10px;">914 trials</span>
-          <span style="background:#e3f2fd; color:#1565c0; font-size:11px; padding:2px 8px; border-radius:10px;">21 signals detected</span>
-          <span style="background:#f3e5f5; color:#6a1b9a; font-size:11px; padding:2px 8px; border-radius:10px;">9 tools</span>
-          <span style="background:#fff8e1; color:#e65100; font-size:11px; padding:2px 8px; border-radius:10px;">Human-in-loop</span>
+        <p style="font-size:0.86rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">Agentic Clinical Trial Copilot — LangGraph multi-agent orchestration with pharmacovigilance signal detection using Reporting Odds Ratio on 3,206 FDA FAERS adverse event reports.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.2rem">
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2)">914 trials</span>
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2)">21 signals detected</span>
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid var(--borderg);color:var(--gold)">9 tools</span>
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid var(--borderg);color:var(--gold)">Human-in-loop</span>
         </div>
-        <div style="font-size:11px; color:#888; margin-top:4px;">LangGraph · LangChain · Snowflake Cortex · dbt · ClinicalTrials.gov · FDA FAERS · Streamlit</div>
-        <div style="display:flex; gap:0.75rem; margin-top:auto; padding-top:0.75rem; border-top:1px solid #f0f0f0;">
-          <a href="https://pharma-agent-copilot.streamlit.app" target="_blank" style="background:#1B3A6B; color:#fff; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; font-weight:500;">🔗 Live Demo</a>
-          <a href="https://github.com/nivethaj14/pharma-agent-copilot" target="_blank" style="background:#f5f5f5; color:#333; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; border:1px solid #ddd;">GitHub</a>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1.2rem">LangGraph · LangChain · Snowflake Cortex · dbt · ClinicalTrials.gov · FDA FAERS · Streamlit</div>
+        <div style="display:flex;gap:0.75rem;padding-top:1rem;border-top:1px solid var(--border)">
+          <a href="https://pharma-agent-copilot.streamlit.app" target="_blank" style="padding:0.5rem 1.2rem;background:var(--teal);color:var(--bg);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='var(--teal2)'" onmouseout="this.style.background='var(--teal)'">Live Demo</a>
+          <a href="https://github.com/nivethaj14/pharma-agent-copilot" target="_blank" style="padding:0.5rem 1.2rem;border:1px solid var(--border);color:var(--muted);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.2s" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal2)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">GitHub</a>
         </div>
       </div>
 
       <!-- Project 3 -->
-      <div style="background:#fff; border-radius:12px; border:1px solid #e0e0e0; padding:1.5rem; display:flex; flex-direction:column; gap:0.75rem;">
-        <div style="display:flex; align-items:center; gap:0.75rem;">
-          <div style="background:#fff8e1; border-radius:8px; padding:0.5rem; font-size:1.3rem;">📝</div>
+      <div style="background:var(--bg2);border:1px solid var(--border);padding:1.8rem;position:relative;transition:border-color 0.25s" onmouseover="this.style.borderColor='var(--teal)'" onmouseout="this.style.borderColor='var(--border)'">
+        <div style="position:absolute;top:-1px;left:1.5rem;width:2rem;height:2px;background:var(--teal)"></div>
+        <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.2rem">
+          <div style="width:44px;height:44px;background:rgba(26,158,142,0.08);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0">📝</div>
           <div>
-            <div style="font-size:11px; font-weight:600; text-transform:uppercase; letter-spacing:.05em; color:#0D7377;">Project 3</div>
-            <div style="font-size:1rem; font-weight:600; color:#1B3A6B;">PharmaContent</div>
+            <div style="font-size:0.68rem;letter-spacing:0.14em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.2rem">Project 3</div>
+            <div style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:600">PharmaContent</div>
           </div>
         </div>
-        <p style="font-size:0.88rem; color:#555; line-height:1.6; margin:0;">GenAI Content Generator for Medical Affairs — MCP server with 6 standardized tools generating plain language summaries, competitive briefs, and regulatory context with full audit trail.</p>
-        <div style="display:flex; flex-wrap:wrap; gap:6px;">
-          <span style="background:#e8f5e9; color:#2e7d32; font-size:11px; padding:2px 8px; border-radius:10px;">6 MCP tools</span>
-          <span style="background:#e3f2fd; color:#1565c0; font-size:11px; padding:2px 8px; border-radius:10px;">3 audiences</span>
-          <span style="background:#f3e5f5; color:#6a1b9a; font-size:11px; padding:2px 8px; border-radius:10px;">Full audit trail</span>
-          <span style="background:#fff8e1; color:#e65100; font-size:11px; padding:2px 8px; border-radius:10px;">MCP protocol</span>
+        <p style="font-size:0.86rem;color:var(--muted);line-height:1.7;margin-bottom:1.2rem">GenAI Content Generator for Medical Affairs — MCP server with 6 standardized tools generating plain language summaries, competitive briefs, and regulatory context with full pharma-compliant audit trail.</p>
+        <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:1.2rem">
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2)">6 MCP tools</span>
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2)">3 audiences</span>
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid var(--borderg);color:var(--gold)">Full audit trail</span>
+          <span style="font-size:0.72rem;padding:0.25rem 0.7rem;border:1px solid var(--borderg);color:var(--gold)">MCP protocol</span>
         </div>
-        <div style="font-size:11px; color:#888; margin-top:4px;">MCP · Snowflake Cortex · Mistral Large 2 · Python · Streamlit</div>
-        <div style="display:flex; gap:0.75rem; margin-top:auto; padding-top:0.75rem; border-top:1px solid #f0f0f0;">
-          <a href="https://pharma-content-generator.streamlit.app" target="_blank" style="background:#1B3A6B; color:#fff; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; font-weight:500;">🔗 Live Demo</a>
-          <a href="https://github.com/nivethaj14/pharma-content-generator" target="_blank" style="background:#f5f5f5; color:#333; padding:6px 14px; border-radius:6px; font-size:12px; text-decoration:none; border:1px solid #ddd;">GitHub</a>
+        <div style="font-size:0.72rem;color:var(--muted);margin-bottom:1.2rem">MCP · Snowflake Cortex · Mistral Large 2 · Python · Streamlit</div>
+        <div style="display:flex;gap:0.75rem;padding-top:1rem;border-top:1px solid var(--border)">
+          <a href="https://pharma-content-generator.streamlit.app" target="_blank" style="padding:0.5rem 1.2rem;background:var(--teal);color:var(--bg);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:background 0.2s" onmouseover="this.style.background='var(--teal2)'" onmouseout="this.style.background='var(--teal)'">Live Demo</a>
+          <a href="https://github.com/nivethaj14/pharma-content-generator" target="_blank" style="padding:0.5rem 1.2rem;border:1px solid var(--border);color:var(--muted);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;text-decoration:none;transition:all 0.2s" onmouseover="this.style.borderColor='var(--teal)';this.style.color='var(--teal2)'" onmouseout="this.style.borderColor='var(--border)';this.style.color='var(--muted)'">GitHub</a>
         </div>
       </div>
 
     </div>
   </div>
 </section>
-<!-- END AI PROJECTS SECTION -->
-  <!-- HOW I USE AI -->
-<section id="ai-usage" style="background:var(--bg)">
+
+<!-- HOW I USE AI -->
+<section id="ai-usage" style="background:var(--bg2)">
   <div class="section-inner">
     <div class="section-label">AI in Practice</div>
     <h2>How I Use AI in My Work</h2>
     <p class="section-sub">Practical, hands-on application of AI tools across the full analytics workflow — from requirement gathering and development to testing and delivery.</p>
     <div class="divider"></div>
-
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem">
-
-      <!-- Cortex AI -->
       <div class="fade-up">
         <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem">
           <div style="width:44px;height:44px;background:rgba(26,158,142,0.08);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--teal2);flex-shrink:0">❄</div>
@@ -626,25 +630,23 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:1rem">
-          <div style="padding:1.2rem 1.4rem;border:1px solid var(--border);background:var(--bg2);position:relative">
+          <div style="padding:1.2rem 1.4rem;border:1px solid var(--border);background:var(--bg3);position:relative">
             <div style="position:absolute;top:-1px;left:1.2rem;width:1.8rem;height:2px;background:var(--teal)"></div>
             <div style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Code Generation</div>
             <div style="font-size:0.86rem;color:var(--white);opacity:0.85;line-height:1.7">Generates SQL queries, stored procedures, and Python scripts inside Snowflake — accelerating development and reducing manual coding effort across the team</div>
           </div>
-          <div style="padding:1.2rem 1.4rem;border:1px solid var(--border);background:var(--bg2);position:relative">
+          <div style="padding:1.2rem 1.4rem;border:1px solid var(--border);background:var(--bg3);position:relative">
             <div style="position:absolute;top:-1px;left:1.2rem;width:1.8rem;height:2px;background:var(--teal)"></div>
             <div style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Streamlit App Development</div>
             <div style="font-size:0.86rem;color:var(--white);opacity:0.85;line-height:1.7">Builds real-data KPI prototypes inside Snowflake using Streamlit + Cortex AI for stakeholder validation — once logic is confirmed, converted into production dashboards with no rework</div>
           </div>
-          <div style="padding:1.2rem 1.4rem;border:1px solid var(--border);background:var(--bg2);position:relative">
+          <div style="padding:1.2rem 1.4rem;border:1px solid var(--border);background:var(--bg3);position:relative">
             <div style="position:absolute;top:-1px;left:1.2rem;width:1.8rem;height:2px;background:var(--teal)"></div>
             <div style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--teal2);margin-bottom:0.4rem">Data Understanding &amp; Modelling</div>
             <div style="font-size:0.86rem;color:var(--white);opacity:0.85;line-height:1.7">Leverages Cortex AI to explore and understand complex datasets, design data models, and validate schema structures — improving accuracy and speed of data architecture decisions</div>
           </div>
         </div>
       </div>
-
-      <!-- ChatGPT & Copilot -->
       <div class="fade-up fade-delay-1">
         <div style="display:flex;align-items:center;gap:1rem;margin-bottom:1.5rem">
           <div style="width:44px;height:44px;background:rgba(212,168,67,0.08);border:1px solid var(--borderg);display:flex;align-items:center;justify-content:center;font-size:1.1rem;color:var(--gold);flex-shrink:0">✦</div>
@@ -654,42 +656,26 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           </div>
         </div>
         <div style="display:flex;flex-direction:column;gap:1rem">
-          <div style="padding:1.2rem 1.4rem;border:1px solid var(--borderg);background:var(--bg2);position:relative">
+          <div style="padding:1.2rem 1.4rem;border:1px solid var(--borderg);background:var(--bg3);position:relative">
             <div style="position:absolute;top:-1px;left:1.2rem;width:1.8rem;height:2px;background:var(--gold)"></div>
             <div style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Technical Documentation</div>
             <div style="font-size:0.86rem;color:var(--white);opacity:0.85;line-height:1.7">Drafts technical documentation, user guides, and solution design documents — reducing documentation effort while maintaining clarity and consistency across deliverables</div>
           </div>
-          <div style="padding:1.2rem 1.4rem;border:1px solid var(--borderg);background:var(--bg2);position:relative">
+          <div style="padding:1.2rem 1.4rem;border:1px solid var(--borderg);background:var(--bg3);position:relative">
             <div style="position:absolute;top:-1px;left:1.2rem;width:1.8rem;height:2px;background:var(--gold)"></div>
             <div style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Requirements Summarisation</div>
             <div style="font-size:0.86rem;color:var(--white);opacity:0.85;line-height:1.7">Summarises complex stakeholder requirements and lengthy business briefs into concise, structured specs — enabling faster alignment between teams and reducing ambiguity</div>
           </div>
-          <div style="padding:1.2rem 1.4rem;border:1px solid var(--borderg);background:var(--bg2);position:relative">
+          <div style="padding:1.2rem 1.4rem;border:1px solid var(--borderg);background:var(--bg3);position:relative">
             <div style="position:absolute;top:-1px;left:1.2rem;width:1.8rem;height:2px;background:var(--gold)"></div>
             <div style="font-size:0.72rem;letter-spacing:0.12em;text-transform:uppercase;color:var(--gold);margin-bottom:0.4rem">Debugging &amp; Test Case Generation</div>
             <div style="font-size:0.86rem;color:var(--white);opacity:0.85;line-height:1.7">Accelerates debugging of SQL, Python, and dashboard logic, and auto-generates comprehensive test cases — improving code reliability and cutting QA cycle time</div>
           </div>
         </div>
       </div>
-
     </div>
-
-    <!-- AI impact bar -->
-    <div style="margin-top:3rem;padding:1.8rem 2rem;border:1px solid var(--border);background:var(--bg2);display:flex;align-items:center;gap:2rem;flex-wrap:wrap" class="fade-up">
+    <div style="margin-top:3rem;padding:1.8rem 2rem;border:1px solid var(--border);background:var(--bg3);display:flex;align-items:center;gap:2rem;flex-wrap:wrap" class="fade-up">
       <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:600;color:var(--teal2);flex-shrink:0">AI Impact Across the Workflow</div>
-        <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
-        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid var(--border);color:var(--muted)">⚡ Faster Development</span>
-        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid var(--border);color:var(--muted)">📄 Better Documentation</span>
-        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid var(--border);color:var(--muted)">🔍 Smarter Debugging</span>
-        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid var(--border);color:var(--muted)">✅ Automated Test Cases</span>
-        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid var(--border);color:var(--muted)">📊 Richer Data Models</span>
-        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid var(--border);color:var(--muted)">🤖 Self-Service AI Apps</span>
-      </div>
-      <div style="width:100%;margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--border);display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
-        <span style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted)">Currently Exploring</span>
-        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2);background:rgba(26,158,142,0.05)">🧠 Agentic AI</span>
-        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2);background:rgba(26,158,142,0.05)">✨ Generative AI</span>
-      </div>
       <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
         <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid var(--border);color:var(--muted)">⚡ Faster Development</span>
         <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid var(--border);color:var(--muted)">📄 Better Documentation</span>
@@ -698,292 +684,125 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
         <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid var(--border);color:var(--muted)">📊 Richer Data Models</span>
         <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid var(--border);color:var(--muted)">🤖 Self-Service AI Apps</span>
       </div>
+      <div style="width:100%;margin-top:1.2rem;padding-top:1.2rem;border-top:1px solid var(--border);display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+        <span style="font-size:0.68rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--muted)">Built &amp; Deployed</span>
+        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2);background:rgba(26,158,142,0.05)">📋 PharmaRAG</span>
+        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2);background:rgba(26,158,142,0.05)">🧬 PharmaAgent</span>
+        <span style="font-size:0.78rem;padding:0.3rem 0.9rem;border:1px solid rgba(26,158,142,0.3);color:var(--teal2);background:rgba(26,158,142,0.05)">📝 PharmaContent</span>
+      </div>
     </div>
-
   </div>
 </section>
 
-<!-- TEAM PROCESS IMPROVEMENTS -->
-<section id="improvements" style="background:var(--bg2)">
+<!-- PROCESS IMPROVEMENTS -->
+<section id="improvements" style="background:var(--bg)">
   <div class="section-inner">
     <div class="section-label">Process Leadership</div>
     <h2>Processes That Improved the Team</h2>
     <p class="section-sub">Structural improvements introduced to elevate team delivery quality, reduce errors, enforce standards, and build reusable, scalable solutions. Click any process to read more.</p>
     <div class="divider"></div>
-
     <div class="acc-list">
-
       <div class="acc-item fade-up" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon teal">◎</span>
-            <div>
-              <div class="acc-tag teal">Quality · Defect Management</div>
-              <div class="acc-title">Quarterly Defect Review</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome teal">↑ Errors reduced by 30%</span>
-            <span class="acc-chevron">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon teal">◎</span><div><div class="acc-tag teal">Quality · Defect Management</div><div class="acc-title">Quarterly Defect Review</div></div></div>
+          <div class="acc-right"><span class="acc-outcome teal">↑ Errors reduced by 30%</span><span class="acc-chevron">+</span></div>
         </div>
         <div class="acc-body">Introduced a structured quarterly defect review process to systematically analyse recurring errors, identify root causes, and implement preventive actions — stopping the same mistakes from resurfacing across sprints.</div>
       </div>
-
       <div class="acc-item fade-up" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon teal">✓</span>
-            <div>
-              <div class="acc-tag teal">Standards · Code Quality · Team Growth</div>
-              <div class="acc-title">Code &amp; UI Review Checklist</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome teal">↑ Team-wide quality · stronger engineering thinking</span>
-            <span class="acc-chevron">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon teal">✓</span><div><div class="acc-tag teal">Standards · Code Quality · Team Growth</div><div class="acc-title">Code &amp; UI Review Checklist</div></div></div>
+          <div class="acc-right"><span class="acc-outcome teal">↑ Team-wide quality · stronger engineering thinking</span><span class="acc-chevron">+</span></div>
         </div>
-        <div class="acc-body">Created a comprehensive review checklist covering both code standards and UI consistency. Consistent, structured code reviews became a powerful learning tool — helping engineers think more critically about their solutions and grow technically sprint after sprint. Over time, the team began self-correcting before reviews, reflecting a genuine shift in engineering mindset and capability.</div>
+        <div class="acc-body">Created a comprehensive review checklist covering both code standards and UI consistency. Consistent, structured code reviews became a powerful learning tool — helping engineers think more critically about their solutions and grow technically sprint after sprint.</div>
       </div>
-
       <div class="acc-item fade-up" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon teal">⬡</span>
-            <div>
-              <div class="acc-tag teal">Agile · Delivery</div>
-              <div class="acc-title">JIRA Agile Practices Enforcement</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome teal">↑ Sprint visibility &amp; team accountability</span>
-            <span class="acc-chevron">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon teal">⬡</span><div><div class="acc-tag teal">Agile · Delivery</div><div class="acc-title">JIRA Agile Practices Enforcement</div></div></div>
+          <div class="acc-right"><span class="acc-outcome teal">↑ Sprint visibility &amp; team accountability</span><span class="acc-chevron">+</span></div>
         </div>
         <div class="acc-body">Enforced structured JIRA practices across the team — ticket hygiene, sprint tracking, status updates, and backlog discipline — ensuring full transparency on delivery progress and enabling data-driven sprint planning.</div>
       </div>
-
       <div class="acc-item fade-up" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon teal">◷</span>
-            <div>
-              <div class="acc-tag teal">Agile · Team Alignment</div>
-              <div class="acc-title">Daily Standup Facilitation</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome teal">↑ Faster blockers · stronger sprint alignment</span>
-            <span class="acc-chevron">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon teal">◷</span><div><div class="acc-tag teal">Agile · Team Alignment</div><div class="acc-title">Daily Standup Facilitation</div></div></div>
+          <div class="acc-right"><span class="acc-outcome teal">↑ Faster blockers · stronger sprint alignment</span><span class="acc-chevron">+</span></div>
         </div>
-        <div class="acc-body">Facilitated daily Agile standup calls across the 24-member engineering team — ensuring alignment on sprint progress, surfacing blockers early, and maintaining delivery momentum across concurrent analytics workstreams. Created a consistent rhythm of communication that kept the team focused, accountable, and unblocked every single day.</div>
+        <div class="acc-body">Facilitated daily Agile standup calls across the 24-member engineering team — ensuring alignment on sprint progress, surfacing blockers early, and maintaining delivery momentum across concurrent analytics workstreams.</div>
       </div>
-
       <div class="acc-item fade-up" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon teal">↺</span>
-            <div>
-              <div class="acc-tag teal">Agile · Continuous Improvement</div>
-              <div class="acc-title">Retrospection Meetings</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome teal">↑ Team-owned best practices · sprint-over-sprint growth</span>
-            <span class="acc-chevron">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon teal">↺</span><div><div class="acc-tag teal">Agile · Continuous Improvement</div><div class="acc-title">Retrospection Meetings</div></div></div>
+          <div class="acc-right"><span class="acc-outcome teal">↑ Team-owned best practices · sprint-over-sprint growth</span><span class="acc-chevron">+</span></div>
         </div>
-        <div class="acc-body">Conducted regular retrospection meetings with the team to collectively reflect on what went well, what didn't, and what could be done better — creating a safe space for honest feedback. Each session resulted in clearly identified areas of improvement and team-validated best practices to carry forward, building a culture of continuous improvement where the team owned their growth.</div>
+        <div class="acc-body">Conducted regular retrospection meetings with the team to collectively reflect on what went well, what didn't, and what could be done better — building a culture of continuous improvement where the team owned their growth.</div>
       </div>
-
       <div class="acc-item fade-up" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon teal">⊞</span>
-            <div>
-              <div class="acc-tag teal">Planning · Clarity Before Build</div>
-              <div class="acc-title">Dedicated Data &amp; Requirement Analysis Phase</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome teal">↑ Reduced development time</span>
-            <span class="acc-chevron">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon teal">⊞</span><div><div class="acc-tag teal">Planning · Clarity Before Build</div><div class="acc-title">Dedicated Data &amp; Requirement Analysis Phase</div></div></div>
+          <div class="acc-right"><span class="acc-outcome teal">↑ Reduced development time</span><span class="acc-chevron">+</span></div>
         </div>
-        <div class="acc-body">Introduced a dedicated upfront phase for data analysis and requirement analysis before any development begins — ensuring the team had complete clarity on data structures, business logic, and expected outputs. Eliminated ambiguity early, significantly reducing mid-sprint rework, scope changes, and back-and-forth between developers and stakeholders.</div>
+        <div class="acc-body">Introduced a dedicated upfront phase for data analysis and requirement analysis before any development begins — ensuring the team had complete clarity on data structures, business logic, and expected outputs.</div>
       </div>
-
       <div class="acc-item fade-up" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon teal">✎</span>
-            <div>
-              <div class="acc-tag teal">Quality · BA Alignment</div>
-              <div class="acc-title">Unit Test Cases with Expected Output</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome teal">↑ Fewer UAT defects · stronger Dev–BA alignment</span>
-            <span class="acc-chevron">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon teal">✎</span><div><div class="acc-tag teal">Quality · BA Alignment</div><div class="acc-title">Unit Test Cases with Expected Output</div></div></div>
+          <div class="acc-right"><span class="acc-outcome teal">↑ Fewer UAT defects · stronger Dev–BA alignment</span><span class="acc-chevron">+</span></div>
         </div>
-        <div class="acc-body">Introduced the practice of creating unit test cases with clearly defined expected outputs before development — aligning developers and Business Analysts on exactly what a correct result looks like. Eliminated post-development misalignment, reduced UAT defects, and gave developers a clear acceptance benchmark to build confidently against.</div>
+        <div class="acc-body">Introduced the practice of creating unit test cases with clearly defined expected outputs before development — aligning developers and Business Analysts on exactly what a correct result looks like.</div>
       </div>
-
       <div class="acc-item fade-up" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon teal">▦</span>
-            <div>
-              <div class="acc-tag teal">Planning · Project Management</div>
-              <div class="acc-title">Effort Estimation &amp; Project Planning</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome teal">↑ Accurate timelines · stronger stakeholder confidence</span>
-            <span class="acc-chevron">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon teal">▦</span><div><div class="acc-tag teal">Planning · Project Management</div><div class="acc-title">Effort Estimation &amp; Project Planning</div></div></div>
+          <div class="acc-right"><span class="acc-outcome teal">↑ Accurate timelines · stronger stakeholder confidence</span><span class="acc-chevron">+</span></div>
         </div>
-        <div class="acc-body">Introduced a structured effort estimation process for all incoming projects and features — breaking down requirements into granular tasks, assessing complexity, and mapping realistic timelines. Ensured stakeholders had clear delivery expectations from day one, enabled the team to commit to achievable sprint goals, and gave leadership the visibility needed to prioritise and allocate resources effectively.</div>
+        <div class="acc-body">Introduced a structured effort estimation process for all incoming projects and features — breaking down requirements into granular tasks, assessing complexity, and mapping realistic timelines.</div>
       </div>
-
       <div class="acc-item fade-up" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon teal">◎</span>
-            <div>
-              <div class="acc-tag teal">Stakeholder Clarity · Rework Elimination</div>
-              <div class="acc-title">Proactive Stakeholder Clarity Meetings</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome teal">↑ Eliminated assumption-driven rework</span>
-            <span class="acc-chevron">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon teal">◎</span><div><div class="acc-tag teal">Stakeholder Clarity · Rework Elimination</div><div class="acc-title">Proactive Stakeholder Clarity Meetings</div></div></div>
+          <div class="acc-right"><span class="acc-outcome teal">↑ Eliminated assumption-driven rework</span><span class="acc-chevron">+</span></div>
         </div>
-        <div class="acc-body">Introduced the practice of proactively reaching out to business stakeholders before development begins — scheduling focused clarity meetings to validate understanding, resolve ambiguities, and align on expected outcomes. These sessions replaced assumption-driven development with shared understanding, ensuring the team built exactly what the business needed from the very first iteration.</div>
+        <div class="acc-body">Introduced the practice of proactively reaching out to business stakeholders before development begins — scheduling focused clarity meetings to validate understanding, resolve ambiguities, and align on expected outcomes.</div>
       </div>
-
       <div class="acc-item fade-up gold" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon gold">⊕</span>
-            <div>
-              <div class="acc-tag gold">Architecture · Reusability</div>
-              <div class="acc-title">Configurable KPI Logic Framework</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome gold">↑ Multi-client adoption · zero logic rework</span>
-            <span class="acc-chevron gold">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon gold">⊕</span><div><div class="acc-tag gold">Architecture · Reusability</div><div class="acc-title">Configurable KPI Logic Framework</div></div></div>
+          <div class="acc-right"><span class="acc-outcome gold">↑ Multi-client adoption · zero logic rework</span><span class="acc-chevron gold">+</span></div>
         </div>
         <div class="acc-body">Redesigned KPI logic to be fully configurable rather than hardcoded — enabling the same framework to be rapidly adopted for new clients without engineering rework, significantly reducing onboarding effort and time-to-value.</div>
       </div>
-
       <div class="acc-item fade-up gold" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon gold">⇄</span>
-            <div>
-              <div class="acc-tag gold">Architecture · Scalability · 🟢 Live Demo Available</div>
-              <div class="acc-title">Configurable Time Period &amp; Category Filters</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome gold">↑ Zero code changes for new requirements</span>
-            <span class="acc-chevron gold">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon gold">⇄</span><div><div class="acc-tag gold">Architecture · Scalability · 🟢 Live Demo Available</div><div class="acc-title">Configurable Time Period &amp; Category Filters</div></div></div>
+          <div class="acc-right"><span class="acc-outcome gold">↑ Zero code changes for new requirements</span><span class="acc-chevron gold">+</span></div>
         </div>
         <div class="acc-body">Architected time period and category filters as table-driven configurations — meaning any new application or client requirement is accommodated through simple table-level changes alone, with no code modifications, no deployment, and no downtime required.
           <div style="margin-top:1rem;padding-top:1rem;border-top:1px solid var(--borderg);display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
             <span style="font-size:0.78rem;color:var(--muted)">Try it yourself — fully interactive, no login required</span>
-            <a href="https://nivethaj14.github.io/time-period-filter/" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 1.2rem;background:rgba(212,168,67,0.1);border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase;transition:all 0.2s">
-              ↗ View Live Demo
-            </a>
+            <a href="https://nivethaj14.github.io/time-period-filter/" target="_blank" onclick="event.stopPropagation()" style="display:inline-flex;align-items:center;gap:0.5rem;padding:0.5rem 1.2rem;background:rgba(212,168,67,0.1);border:1px solid var(--gold);color:var(--gold);text-decoration:none;font-size:0.78rem;letter-spacing:0.08em;text-transform:uppercase">↗ View Live Demo</a>
           </div>
         </div>
       </div>
-
       <div class="acc-item fade-up gold" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon gold">★</span>
-            <div>
-              <div class="acc-tag gold">Architecture · Multi-Client · Multi-Product</div>
-              <div class="acc-title">Unified Data Model — Multi-Client &amp; Multi-Product</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome gold">↑ 50% reduction in development timeline</span>
-            <span class="acc-chevron gold">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon gold">★</span><div><div class="acc-tag gold">Architecture · Multi-Client · Multi-Product</div><div class="acc-title">Unified Data Model — Multi-Client &amp; Multi-Product</div></div></div>
+          <div class="acc-right"><span class="acc-outcome gold">↑ 50% reduction in development timeline</span><span class="acc-chevron gold">+</span></div>
         </div>
-        <div class="acc-body">Designed and implemented a unified Snowflake star schema data model built to support multi-client and multi-product architecture simultaneously — with centralised fact tables and flexible dimension layers. Onboarding a new client or extending to a new product requires only configuration changes, eliminating repetitive development effort and compressing delivery timelines by 50%.</div>
+        <div class="acc-body">Designed and implemented a unified Snowflake star schema data model built to support multi-client and multi-product architecture simultaneously — compressing delivery timelines by 50%.</div>
       </div>
-
       <div class="acc-item fade-up gold" onclick="toggleAcc(this)">
         <div class="acc-header">
-          <div class="acc-left">
-            <span class="acc-icon gold">❄</span>
-            <div>
-              <div class="acc-tag gold">AI Innovation · Real-Data Prototyping</div>
-              <div class="acc-title">Streamlit Prototyping with Real Data for Stakeholder Validation</div>
-            </div>
-          </div>
-          <div class="acc-right">
-            <span class="acc-outcome gold">↑ Zero mock-data rework · no logic changes at production</span>
-            <span class="acc-chevron gold">+</span>
-          </div>
+          <div class="acc-left"><span class="acc-icon gold">❄</span><div><div class="acc-tag gold">AI Innovation · Real-Data Prototyping</div><div class="acc-title">Streamlit Prototyping with Real Data for Stakeholder Validation</div></div></div>
+          <div class="acc-right"><span class="acc-outcome gold">↑ Zero mock-data rework · no logic changes at production</span><span class="acc-chevron gold">+</span></div>
         </div>
-        <div class="acc-body">Introduced a real-data prototyping approach using Snowflake + Cortex AI + Streamlit — building interactive KPI applications directly on live commercial field activity and performance data before committing to a full dashboard. Stakeholders validated actual numbers they could relate to, confirmed logic in real time, and once signed off, the validated model was transformed into a production Power BI dashboard — eliminating the entire mock-data rework cycle.</div>
+        <div class="acc-body">Introduced a real-data prototyping approach using Snowflake + Cortex AI + Streamlit — building interactive KPI applications directly on live commercial field activity and performance data before committing to a full dashboard.</div>
       </div>
-
     </div>
   </div>
 </section>
 
-<style>
-.acc-list{display:flex;flex-direction:column;gap:0.5rem}
-.acc-item{border:1px solid var(--border);background:var(--bg3);cursor:pointer;transition:border-color 0.2s;position:relative;overflow:hidden}
-.acc-item::before{content:'';position:absolute;top:0;left:0;width:3px;height:100%;background:var(--teal);opacity:0;transition:opacity 0.2s}
-.acc-item.gold::before{background:var(--gold)}
-.acc-item:hover,.acc-item.open{border-color:rgba(26,158,142,0.4)}
-.acc-item.gold:hover,.acc-item.gold.open{border-color:rgba(212,168,67,0.35)}
-.acc-item:hover::before,.acc-item.open::before{opacity:1}
-.acc-header{display:flex;justify-content:space-between;align-items:center;padding:1.1rem 1.4rem;gap:1rem}
-.acc-left{display:flex;align-items:center;gap:1rem}
-.acc-icon{width:32px;height:32px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:0.85rem;flex-shrink:0}
-.acc-icon.teal{color:var(--teal2);border-color:var(--border)}
-.acc-icon.gold{color:var(--gold);border-color:var(--borderg)}
-.acc-tag{font-size:0.65rem;letter-spacing:0.12em;text-transform:uppercase;margin-bottom:0.2rem}
-.acc-tag.teal{color:var(--teal2)}
-.acc-tag.gold{color:var(--gold)}
-.acc-title{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;line-height:1.3;color:var(--white)}
-.acc-right{display:flex;align-items:center;gap:1.2rem;flex-shrink:0}
-.acc-outcome{font-size:0.75rem;color:var(--muted);text-align:right;max-width:220px}
-.acc-outcome.teal{color:var(--teal2)}
-.acc-outcome.gold{color:var(--goldlt)}
-.acc-chevron{width:24px;height:24px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--muted);transition:transform 0.3s,color 0.2s;flex-shrink:0;line-height:1}
-.acc-chevron.gold{border-color:var(--borderg)}
-.acc-item.open .acc-chevron{transform:rotate(45deg);color:var(--teal2)}
-.acc-item.gold.open .acc-chevron{color:var(--gold)}
-.acc-body{font-size:0.86rem;color:var(--muted);line-height:1.8;max-height:0;overflow:hidden;transition:max-height 0.4s ease,padding 0.3s ease;padding:0 1.4rem}
-.acc-item.open .acc-body{max-height:300px;padding:0 1.4rem 1.3rem}
-@media(max-width:900px){.acc-outcome{display:none}.acc-right{gap:0.8rem}}
-</style>
-
-
-
-
-
-
-
-
-
-<!-- CERTIFICATIONS & EDUCATION -->
+<!-- CERTIFICATIONS -->
 <section id="certifications">
   <div class="section-inner">
     <div class="section-label">Credentials</div>
@@ -996,27 +815,17 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
         <div class="cert-list">
           <div class="cert-item fade-up">
             <div class="cert-icon">SQL</div>
-            <div>
-              <div class="cert-name">ORACLE Certified SQL Expert (OCA)</div>
-              <div class="cert-body">Oracle · Database Expert Certification · 2014</div>
-            </div>
+            <div><div class="cert-name">ORACLE Certified SQL Expert (OCA)</div><div class="cert-body">Oracle · Database Expert Certification · 2014</div></div>
           </div>
           <div class="cert-item fade-up">
             <div class="cert-icon">DS</div>
-            <div>
-              <div class="cert-name">Master Certification in Data Science</div>
-              <div class="cert-body">Simplilearn · Advanced Data Science Program · 2020</div>
-            </div>
+            <div><div class="cert-name">Master Certification in Data Science</div><div class="cert-body">Simplilearn · Advanced Data Science Program · 2020</div></div>
           </div>
           <div class="cert-item fade-up">
             <div class="cert-icon">HX</div>
-            <div>
-              <div class="cert-name">AHM 250 — Introduction to Healthcare</div>
-              <div class="cert-body">AHIP · Health Insurance &amp; Payer Domain · 2012</div>
-            </div>
+            <div><div class="cert-name">AHM 250 — Introduction to Healthcare</div><div class="cert-body">AHIP · Health Insurance &amp; Payer Domain · 2012</div></div>
           </div>
         </div>
-
         <div class="edu-card fade-up" style="margin-top:2rem">
           <div class="section-label" style="margin-bottom:0.8rem;font-size:0.68rem">Education</div>
           <div style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;font-weight:600;margin-bottom:0.3rem">Bachelor of Engineering — Electronics &amp; Communication</div>
@@ -1024,53 +833,30 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
           <div style="font-size:0.8rem;color:var(--muted)">Graduated with 80% · Top 10 percentile of the class</div>
         </div>
       </div>
-
       <div>
         <div class="section-label" style="margin-bottom:1.2rem;font-size:0.68rem">Awards &amp; Recognition</div>
         <div class="award-item fade-up">
           <div class="award-icon">★</div>
-          <div>
-            <div class="award-name">Best BI Visualization Idea</div>
-            <div class="award-body">Cash prize of ₹10,000 · Outstanding contribution to data visualization innovation</div>
-          </div>
+          <div><div class="award-name">Best BI Visualization Idea</div><div class="award-body">Cash prize of ₹10,000 · Outstanding contribution to data visualization innovation</div></div>
         </div>
         <div class="award-item fade-up">
           <div class="award-icon">◈</div>
-          <div>
-            <div class="award-name">Associate of the Quarter</div>
-            <div class="award-body">Q4 2016 · Cognizant Technology Solutions · Client delivery excellence</div>
-          </div>
+          <div><div class="award-name">Associate of the Quarter</div><div class="award-body">Q4 2016 · Cognizant Technology Solutions · Client delivery excellence</div></div>
         </div>
         <div class="award-item fade-up">
           <div class="award-icon">▲</div>
-          <div>
-            <div class="award-name">Consistent Strong Performer</div>
-            <div class="award-body">Syneos Health · Recognised across multiple appraisal cycles for consistently delivering high-quality analytics solutions and outstanding team leadership</div>
-          </div>
+          <div><div class="award-name">Consistent Strong Performer</div><div class="award-body">Syneos Health · Recognised across multiple appraisal cycles for consistently delivering high-quality analytics solutions and outstanding team leadership</div></div>
         </div>
         <div class="award-item fade-up">
           <div class="award-icon">✦</div>
-          <div>
-            <div class="award-name">Exceptional Performer</div>
-            <div class="award-body">Syneos Health · Latest appraisal cycle · Highest performance rating — recognised for exceptional delivery, technical innovation, and people leadership impact</div>
-          </div>
+          <div><div class="award-name">Exceptional Performer</div><div class="award-body">Syneos Health · Latest appraisal cycle · Highest performance rating — recognised for exceptional delivery, technical innovation, and people leadership impact</div></div>
         </div>
-
         <div style="margin-top:2rem;padding:1.5rem;border:1px solid var(--border);background:var(--bg2)" class="fade-up">
           <div class="section-label" style="margin-bottom:0.8rem;font-size:0.68rem">Languages</div>
           <div style="display:flex;gap:0.8rem;flex-wrap:wrap">
-            <div style="padding:0.6rem 1.2rem;border:1px solid var(--border);text-align:center">
-              <div style="font-size:0.86rem;font-weight:500">English</div>
-              <div style="font-size:0.7rem;color:var(--teal2);margin-top:0.1rem;letter-spacing:0.08em;text-transform:uppercase">Professional</div>
-            </div>
-            <div style="padding:0.6rem 1.2rem;border:1px solid var(--border);text-align:center">
-              <div style="font-size:0.86rem;font-weight:500">Tamil</div>
-              <div style="font-size:0.7rem;color:var(--teal2);margin-top:0.1rem;letter-spacing:0.08em;text-transform:uppercase">Native</div>
-            </div>
-            <div style="padding:0.6rem 1.2rem;border:1px solid var(--border);text-align:center">
-              <div style="font-size:0.86rem;font-weight:500">Telugu</div>
-              <div style="font-size:0.7rem;color:var(--teal2);margin-top:0.1rem;letter-spacing:0.08em;text-transform:uppercase">Proficient</div>
-            </div>
+            <div style="padding:0.6rem 1.2rem;border:1px solid var(--border);text-align:center"><div style="font-size:0.86rem;font-weight:500">English</div><div style="font-size:0.7rem;color:var(--teal2);margin-top:0.1rem;letter-spacing:0.08em;text-transform:uppercase">Professional</div></div>
+            <div style="padding:0.6rem 1.2rem;border:1px solid var(--border);text-align:center"><div style="font-size:0.86rem;font-weight:500">Tamil</div><div style="font-size:0.7rem;color:var(--teal2);margin-top:0.1rem;letter-spacing:0.08em;text-transform:uppercase">Native</div></div>
+            <div style="padding:0.6rem 1.2rem;border:1px solid var(--border);text-align:center"><div style="font-size:0.86rem;font-weight:500">Telugu</div><div style="font-size:0.7rem;color:var(--teal2);margin-top:0.1rem;letter-spacing:0.08em;text-transform:uppercase">Proficient</div></div>
           </div>
         </div>
       </div>
@@ -1083,7 +869,7 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
   <div class="section-inner">
     <div class="section-label" style="justify-content:center;margin-left:0">Let's Connect</div>
     <h2>Open to Remote Leadership Roles</h2>
-    <p>Seeking senior remote opportunities in Data Analytics, AI, and Reporting leadership — happy to connect and explore the right fit.</p>
+    <p>Seeking senior remote opportunities in AI, Data Engineering, and Analytics leadership — happy to connect and explore the right fit.</p>
     <div class="contact-grid">
       <a href="mailto:nivethaj14@gmail.com" class="contact-card">
         <div class="contact-card-icon">✉</div>
@@ -1107,7 +893,7 @@ footer{padding:1.8rem 4rem;border-top:1px solid var(--border);display:flex;justi
 <!-- FOOTER -->
 <footer>
   <div>© 2025 Nivetha Jayaram Raja · Data &amp; AI Portfolio</div>
-  <div>12+ Years · Healthcare &amp; Pharma Analytics · Open to Remote Roles</div>
+  <div>12+ Years · Healthcare &amp; Pharma Analytics · GenAI &amp; Agentic AI · Open to Remote Roles</div>
 </footer>
 
 <script>
@@ -1115,7 +901,6 @@ function toggleAcc(el){
   const isOpen = el.classList.contains('open');
   el.classList.toggle('open', !isOpen);
 }
-
 const obs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -1128,8 +913,6 @@ const obs = new IntersectionObserver(entries => {
   });
 }, {threshold: 0.1});
 document.querySelectorAll('.fade-up').forEach(el => obs.observe(el));
-
-// Skills section — trigger bars even when parent isn't .fade-up
 const skillObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
@@ -1142,8 +925,6 @@ const skillObs = new IntersectionObserver(entries => {
 }, {threshold: 0.05});
 const sk = document.getElementById('skills');
 if (sk) skillObs.observe(sk);
-
-// Animated counters
 function animateCounter(el, target, duration) {
   const isDecimal = !Number.isInteger(target);
   const start = performance.now();
@@ -1157,7 +938,6 @@ function animateCounter(el, target, duration) {
   };
   requestAnimationFrame(run);
 }
-
 const cObs = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) {
